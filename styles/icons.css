@@ -1,0 +1,60 @@
+/* BRAND DEFAULT */
+.brandIcon{
+    stroke: #fff;
+    opacity: 75%;
+    width: 25px;
+    height: 25px;
+    transition-property: stroke, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.brandIconLink:hover .brandIcon{
+    stroke: #09BC8A;
+    transform: translateY(-3px);
+}
+
+/* ARCHIVE */
+.archive-icon{
+    stroke: #fff;
+    opacity: 75%;
+    width: 20px;
+    height: 20px;
+    transition-property: stroke, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.archive-icon-link:hover .archive-icon{
+    stroke: #09BC8A;
+    transform: translateY(-3px);
+}
+
+/* IMAGE ZOOM */
+.image-zoom-close{
+    stroke: #fff;
+    opacity: 75%;
+    width: 40px;
+    height: 40px;
+    transition-property: stroke, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.image-zoom-close-link:hover .image-zoom-close{
+    stroke: #09BC8A;
+}
+
+/* TO TOP WIDGET ICON */
+.toTopIcon{
+    stroke: #fff;
+    opacity: 75%;
+    width: 25px;
+    height: 25px;
+    transition-property: stroke, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.toTopIcon-link:hover .toTopIcon{
+    stroke: #09BC8A;
+}

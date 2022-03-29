@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #171c28;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #09BC8A;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
+p br{
+  margin-bottom: 1rem;
+}
