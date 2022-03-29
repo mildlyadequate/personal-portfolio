@@ -45,8 +45,6 @@ const ContactSection = () => {
 
                 <form name="contact" action="?formsuccess=true" method="POST" className={"block w-full md:w-3/4 mr-8"} data-netlify="true" data-netlify-recaptcha="true">
                     <input type="hidden" name="form-name" value="contact" />
-                    <div data-netlify-recaptcha="true"></div>
-                    
                     <div className='flex flex-col'>
                         <label
                             htmlFor="name"
@@ -90,6 +88,7 @@ const ContactSection = () => {
                         />
                     </div>
 
+                    <div data-netlify-recaptcha="true"></div>
                     <button
                         type="submit"
                         className='w-1/2 py-4 mx-auto border-themeAccent border mt-8 text-white hover:text-themeBackground hover:bg-themeAccent transition'
