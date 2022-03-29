@@ -43,9 +43,12 @@ const ContactSection = () => {
 
             <div className='flex w-full'>
 
-                <form name="contact" action="?formsuccess=true" method="POST" className={"block w-full md:w-3/4 mr-8"} data-netlify-recaptcha="true" data-netlify="true">
+                <form name="contact" action="?formsuccess=true" method="POST" className={"block w-full md:w-3/4 mr-8"} netlify-honeypot="bot-field" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className='flex flex-col'>
+                        <label>
+                            Ignore this if you're human: <input name="bot-field" />
+                        </label>
                         <label
                             htmlFor="name"
                             className='text-themeMild mb-1'
