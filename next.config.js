@@ -4,8 +4,8 @@ module.exports = {
   reactStrictMode: true,
 
   i18n:{
-    locales: ['default','en','de'],
-    defaultLocale: 'default',
+    locales: ['en','de'],
+    defaultLocale: 'de',
     localeDetection: true,
   },
   trailingSlash: true,
