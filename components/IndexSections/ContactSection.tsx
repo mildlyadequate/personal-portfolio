@@ -46,9 +46,12 @@ const ContactSection = () => {
                 <form name="contact" action="?formsuccess=true" method="POST" className={"block w-full md:w-3/4 mr-8"} netlify-honeypot="bot-field" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className='flex flex-col'>
-                        <label>
-                            Ignore this if you're human: <input name="bot-field" />
+                        
+                        <label htmlFor="bot-field">
+                            Ignore this if you're human:
                         </label>
+                        <input name="bot-field" />
+
                         <label
                             htmlFor="name"
                             className='text-themeMild mb-1'
