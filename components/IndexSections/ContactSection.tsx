@@ -44,6 +44,8 @@ const ContactSection = () => {
             <div className='flex w-full'>
 
                 <form name="contact" action="/success" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact"/>
+  
                     <p>
                         <label>Your Name: <input type="text" name="name" /></label>
                     </p>
