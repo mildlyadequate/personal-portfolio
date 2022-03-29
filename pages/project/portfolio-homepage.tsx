@@ -7,7 +7,7 @@ import ProjectContentLayout from '../../components/ProjectComponents/ProjectCont
 import SchemaHandler from '../../components/ProjectComponents/SchemaHandler';
 import { useTranslation } from '../../hooks/useTranslation';
 
-const personalPortfolio = () => {
+const PersonalPortfolio = () => {
 
     let T = useTranslation();
 
@@ -88,4 +88,4 @@ const personalPortfolio = () => {
     )
 }
 
-export default personalPortfolio;
+export default PersonalPortfolio;

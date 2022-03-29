@@ -31,7 +31,7 @@ const WorkSection = () => {
     useEffect(() => {
         if (itemsExpanded) setItemsToShow(otherProjects.length);
         else setItemsToShow(6);
-    }, [itemsExpanded]);
+    }, [itemsExpanded,otherProjects.length]);
 
     return (
         <div id="work" className="py-5 my-24 mx-auto max-w-screen-lg items-center justify-center flex flex-col">
@@ -71,11 +71,11 @@ const WorkSection = () => {
                         <div className='flex work-links'>
 
                             {item.linkGithub !== "" &&
-                                <a href={item.linkGithub} target={"_blank"} className='p-2 brandIconLink'><FiGithub className='brandIcon' /></a>
+                                <a href={item.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'><FiGithub className='brandIcon' /></a>
                             }
 
                             {item.linkExternal !== "" &&
-                                <a href={item.linkGithub} target={"_blank"} className='p-2 brandIconLink'><FiExternalLink className='brandIcon' /></a>
+                                <a href={item.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'><FiExternalLink className='brandIcon' /></a>
                             }
 
                             <Link href={item.linkInternal}>
@@ -90,7 +90,7 @@ const WorkSection = () => {
 
                         <Link href={item.linkInternal}>
                             <a className='w-full h-full align-middle relative block rounded-md'>
-                                {item.image && <Image src={item.image} layout={"responsive"} width={700} height={440} className={"rounded-md mix-blend-multiply"} />}
+                                {item.image && <Image src={item.image} alt="" layout={"responsive"} width={700} height={440} className={"rounded-md mix-blend-multiply"} />}
                                 <div className="absolute top-0 right-0 bottom-0 left-0 rounded-md w-full h-full overflow-hidden bg-fixed opacity-50 hover:opacity-0 transition duration-300 ease-in-out bg-themeMild"></div>
                             </a>
                         </Link>
@@ -127,21 +127,23 @@ const WorkSection = () => {
                                             <div className='flex items-center -mr-2'>
 
                                                 {workItem.linkGithub !== "" &&
-                                                    <a href={workItem.linkGithub} target={"_blank"} className='p-2 brandIconLink'><FiGithub className='brandIcon' /></a>
+                                                    <a href={workItem.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'><FiGithub className='brandIcon' /></a>
                                                 }
 
                                                 {workItem.linkExternal !== "" &&
-                                                    <a href={workItem.linkGithub} target={"_blank"} className='p-2 brandIconLink'><FiExternalLink className='brandIcon' /></a>
+                                                    <a href={workItem.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'><FiExternalLink className='brandIcon' /></a>
                                                 }
 
-                                                <Link href={workItem.linkInternal}>
+                                                <Link href={workItem.linkInternal} passHref>
                                                     <a className='p-2 brandIconLink'><MdOutlineArticle className='brandIcon' /></a>
                                                 </Link>
 
                                             </div>
                                         </div>
                                         <h5 className='text-white text-lg font-semibold'>
-                                            <Link href={workItem.linkInternal}><a className='hover:text-themeAccent hover:underline transition'>{workItem.title}</a></Link>
+                                            <Link href={workItem.linkInternal} passHref>
+                                                <a className='hover:text-themeAccent hover:underline transition'>{workItem.title}</a>
+                                            </Link>
                                         </h5>
                                         <div className='text-themeMild'>
                                             {workItem.desc}

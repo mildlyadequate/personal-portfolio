@@ -8,11 +8,11 @@ import { useProjectData } from '../hooks/useProjectData';
 import { useTranslation } from '../hooks/useTranslation';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
-const archive = () => {
+const Archive = () => {
 
   let T = useTranslation();
   const projectData = useProjectData(true);
-  const {width} = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   // Prop className doesnt match between Server/Client with this, removing isSmall from initializer in useState fixes it, but triggers reload on page load. 
   // Haven't noticed any bugs occuring from this yet other than the Warning in console
@@ -68,7 +68,7 @@ const archive = () => {
                   {/* MOBILE LAYOUT */}
 
                   <td className={`p-4 pr-4 ${isSmallWindow ? "flex flex-col" : "hidden"}`}>
-                    <Link href={project.linkInternal}>
+                    <Link href={project.linkInternal} passHref>
                       <div className='flex flex-row'>
                         <span className='font-mono text-themeAccent mr-4 mt-[2px]'>{project.year}</span>
                         <h3 className='text-white text-lg font-sans font-semibold group-hover:text-themeAccent group-hover:underline cursor-pointer'>{project.title}</h3>
@@ -83,17 +83,17 @@ const archive = () => {
                       <div className='flex gap-4'>
 
                         {typeof project.linkInternal === 'string' &&  // project.linkInternal !== "" &&
-                          <Link href={project.linkInternal}>
+                          <Link href={project.linkInternal} passHref>
                             <a className='py-2 archive-icon-link'><MdOutlineArticle className='archive-icon' /></a>
                           </Link>
                         }
 
                         {project.linkGithub !== "" &&
-                          <a href={project.linkGithub} target={"_blank"} className='py-2 archive-icon-link'><FiGithub className='archive-icon' /></a>
+                          <a href={project.linkGithub} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'><FiGithub className='archive-icon' /></a>
                         }
 
                         {project.linkExternal !== "" &&
-                          <a href={project.linkGithub} target={"_blank"} className='py-2 archive-icon-link'><FiExternalLink className='archive-icon' /></a>
+                          <a href={project.linkGithub} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'><FiExternalLink className='archive-icon' /></a>
                         }
 
                       </div>
@@ -106,7 +106,7 @@ const archive = () => {
                     {project.year}
                   </td>
 
-                  <Link href={project.linkInternal}>
+                  <Link href={project.linkInternal} passHref>
                     <td className={`p-4 ${project.featured && !isSmallWindow ? "flex flex-col" : ""} pr-4 cursor-pointer content-center group ${isSmallWindow ? "hidden" : ""}`}>
                       {project.featured && <span className='text-sm text-themeAccent'>Featured</span>}
                       <h3 className='text-white text-lg font-semibold group-hover:text-themeAccent group-hover:underline'>{project.title}</h3>
@@ -123,17 +123,17 @@ const archive = () => {
                     <div className='flex gap-4'>
 
                       {typeof project.linkInternal === 'string' &&  // project.linkInternal !== "" &&
-                        <Link href={project.linkInternal}>
+                        <Link href={project.linkInternal} passHref>
                           <a className='py-2 archive-icon-link'><MdOutlineArticle className='archive-icon' /></a>
                         </Link>
                       }
 
                       {project.linkGithub !== "" &&
-                        <a href={project.linkGithub} target={"_blank"} className='py-2 archive-icon-link'><FiGithub className='archive-icon' /></a>
+                        <a href={project.linkGithub} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'><FiGithub className='archive-icon' /></a>
                       }
 
                       {project.linkExternal !== "" &&
-                        <a href={project.linkGithub} target={"_blank"} className='py-2 archive-icon-link'><FiExternalLink className='archive-icon' /></a>
+                        <a href={project.linkGithub} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'><FiExternalLink className='archive-icon' /></a>
                       }
 
                     </div>
@@ -153,4 +153,4 @@ const archive = () => {
   )
 }
 
-export default archive;
+export default Archive;

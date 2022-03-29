@@ -31,7 +31,7 @@ const ZoomableImage = ({ previewImg, src, numbering, desc, width, height, prevSr
         <>
             <div className='flex flex-col'>
                 <div>
-                    <Image src={ previewImg.src } width={previewImg.width + "px"} height={previewImg.height + "px"} className={"rounded cursor-zoom-in"} onClick={() => setIsZoomed(!isZoomed)} />
+                    <Image src={ previewImg.src } alt={previewImg.desc} width={previewImg.width + "px"} height={previewImg.height + "px"} className={"rounded cursor-zoom-in"} onClick={() => setIsZoomed(!isZoomed)} />
                 </div>
                 <p className='mt-1 text-themeMild'>
                     <span className='mr-2 text-themeAccent font-mono'>{T.zoomed_image_desc_numbering + numbering}</span>

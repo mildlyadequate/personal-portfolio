@@ -22,12 +22,12 @@ const Navbar = ({ isSidenavOpen, setIsSidenavOpen }: TNavbar) => {
         setIsSidenavOpen(!isSidenavOpen);
     };
 
-    const onResize = () => {
-        const width = window.innerWidth;
-        if (width >= 1024) setIsSidenavOpen(false);
-    };
-
     useEffect(() => {
+        const onResize = () => {
+            const width = window.innerWidth;
+            if (width >= 1024) setIsSidenavOpen(false);
+        };
+
         isSidenavOpen && (document.body.style.overflow = "hidden");
         !isSidenavOpen && (document.body.style.overflow = "unset");
 
@@ -35,7 +35,7 @@ const Navbar = ({ isSidenavOpen, setIsSidenavOpen }: TNavbar) => {
         return () => {
             window.removeEventListener('resize', onResize);
         }
-    }, [isSidenavOpen]);
+    }, [isSidenavOpen,setIsSidenavOpen]);
 
     return (
         <nav>

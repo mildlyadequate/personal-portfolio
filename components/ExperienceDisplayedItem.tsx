@@ -15,7 +15,7 @@ const ExperienceDisplayedItem = ({selectedTab,institutionLink,institution,header
         <CSSTransition key={selectedTab} timeout={200} classNames={"experience-transition"}>
 
             <div className='flex flex-col'>
-                <a href={institutionLink} target={"_blank"} className='text-themeAccent font-mono text-sm mb-1'>{institution}</a>
+                <a href={institutionLink} target={"_blank"} rel="noreferrer" className='text-themeAccent font-mono text-sm mb-1'>{institution}</a>
                 <h3 className='text-xl text-white leading-none mb-1'>{header}</h3>
                 <p className='text-sm text-themeMild mb-4'>{time}</p>
                 <div className='block'>

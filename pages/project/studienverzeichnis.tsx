@@ -12,7 +12,7 @@ import DynamicContentDiv from '../../components/DynamicContentDiv';
 import GalleryZoomableImage from '../../components/ProjectComponents/GalleryZoomableImage';
 import ProjectSectionTitle from '../../components/ProjectComponents/ProjectSectionTitle';
 
-const studienverzeichnis = () => {
+const Studienverzeichnis = () => {
 
     let T = useTranslation();
 
@@ -186,4 +186,4 @@ const studienverzeichnis = () => {
     )
 }
 
-export default studienverzeichnis;
+export default Studienverzeichnis;

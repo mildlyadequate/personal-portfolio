@@ -1,6 +1,5 @@
 import React, { FormEvent, useState } from 'react';
 import { useTranslation } from '../../hooks/useTranslation';
-import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const ContactSection = () => {
 

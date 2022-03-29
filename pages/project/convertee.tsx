@@ -7,7 +7,7 @@ import ProjectContentLayout from '../../components/ProjectComponents/ProjectCont
 import SchemaHandler from '../../components/ProjectComponents/SchemaHandler';
 import { useTranslation } from '../../hooks/useTranslation';
 
-const convertee = () => {
+const Convertee = () => {
 
     let T = useTranslation();
 
@@ -88,4 +88,4 @@ const convertee = () => {
     )
 }
 
-export default convertee;
+export default Convertee;

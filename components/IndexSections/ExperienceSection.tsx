@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from '../../hooks/useTranslation';
 import clsx from 'clsx';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import ExperienceDisplayedItem from '../ExperienceDisplayedItem';
 
 const ExperienceSection = () => {
 
@@ -107,7 +106,7 @@ const ExperienceSection = () => {
               <CSSTransition nodeRef={nodeRef} key={selectedTab} timeout={200} classNames={"experience-transition"}>
 
                 <div ref={nodeRef} className='flex flex-col'>
-                  <a href={experiences[selectedTab].institutionLink} target={"_blank"} className='text-themeAccent font-mono text-sm mb-1'>
+                  <a href={experiences[selectedTab].institutionLink} target={"_blank"} rel="noreferrer" className='text-themeAccent font-mono text-sm mb-1'>
                     {experiences[selectedTab].institution}
                   </a>
                   <h3 className='text-xl text-white leading-none mb-1'>{experiences[selectedTab].header}</h3>
