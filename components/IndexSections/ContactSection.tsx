@@ -9,26 +9,26 @@ const ContactSection = () => {
 
     let T = useTranslation();
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    // const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault();
 
-        console.log('Sending')
+    //     console.log('Sending')
 
-        let data = {
-            name,
-            email,
-            message
-        }
+    //     let data = {
+    //         name,
+    //         email,
+    //         message
+    //     }
 
-        fetch('/api/contact-form', {
-            method: 'POST',
-            // headers: {
-            //     'Accept': 'application/json, text/plain, */*',
-            //     'Content-Type': 'application/json'
-            // },
-            body: JSON.stringify(data)
-        })
-    }
+    //     fetch('/api/contact-form', {
+    //         method: 'POST',
+    //         // headers: {
+    //         //     'Accept': 'application/json, text/plain, */*',
+    //         //     'Content-Type': 'application/json'
+    //         // },
+    //         body: JSON.stringify(data)
+    //     })
+    // }
 
     return (
         <div id="contact" className="py-24 mx-auto max-w-screen-sm items-center justify-center flex flex-col">
@@ -43,7 +43,7 @@ const ContactSection = () => {
 
             <div className='flex w-full'>
 
-                <form onSubmit={handleSubmit} className={"block w-full md:w-3/4 mr-8"}>
+                <form name="contact-form" method="POST" className={"block w-full md:w-3/4 mr-8"} data-netlify="true">
                     <div className='flex flex-col'>
                         <label
                             htmlFor="name"

@@ -32,7 +32,7 @@ const HeroSection = React.memo(() => {
             <div className="mt-[-88px]">
                 <p className="font-mono text-themeAccent font-normal text-xl mb-5">{T.hero_top_line}</p>
                 <h1 className="text-white leading-none text-clampTitle mb-3 font-bold ml-[-2px]">Sebastian Schuler</h1>
-                <h2 className="text-white leading-none text-clampSubtitle mb-3 font-bold opacity-80">
+                <h2 className="text-white leading-none text-clampSubtitle mb-3 font-bold">
                     {T.hero_typing_before}
                     {width && (width <= 480 ? <br /> : <></>)}
                     <ReactTypingEffect
