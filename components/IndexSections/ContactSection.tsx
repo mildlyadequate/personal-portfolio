@@ -44,14 +44,14 @@ const ContactSection = () => {
 
             <div className="flex w-full">
                 <form
-                    name="contact"
+                    name="contactme"
                     action="?formsuccess=true"
                     method="POST"
                     className={"block w-full md:w-3/4 mr-8"}
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                 >
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="contactme" />
                     <div className="flex flex-col">
 
                         <label className="hidden" htmlFor="bot-field">Ignore this if you&apos;re human:</label>
