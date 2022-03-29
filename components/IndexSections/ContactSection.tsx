@@ -54,8 +54,8 @@ const ContactSection = () => {
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="flex flex-col">
 
-                        <label htmlFor="bot-field">Ignore this if you&apos;re human:</label>
-                        <input name="bot-field" />
+                        <label className="hidden" htmlFor="bot-field">Ignore this if you&apos;re human:</label>
+                        <input className="hidden" name="bot-field" />
 
                         <label htmlFor="name" className="text-themeMild mb-1">
                             Name:
