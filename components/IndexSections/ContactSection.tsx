@@ -43,8 +43,10 @@ const ContactSection = () => {
 
             <div className='flex w-full'>
 
-                <form name="contact" action="?success=true" method="POST" className={"block w-full md:w-3/4 mr-8"} data-netlify="true">
+                <form name="contact" action="?formsuccess=true" method="POST" className={"block w-full md:w-3/4 mr-8"} data-netlify="true" data-netlify-recaptcha="true">
                     <input type="hidden" name="form-name" value="contact" />
+                    <div data-netlify-recaptcha="true"></div>
+                    
                     <div className='flex flex-col'>
                         <label
                             htmlFor="name"

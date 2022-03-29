@@ -44,17 +44,12 @@
     stroke: #09BC8A;
 }
 
-/* TO TOP WIDGET ICON */
-.toTopIcon{
+/* CLOSE FORM NOTIF ICON */
+.closeNotifIcon{
     stroke: #fff;
-    opacity: 75%;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     transition-property: stroke, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
-}
-
-.toTopIcon-link:hover .toTopIcon{
-    stroke: #09BC8A;
 }

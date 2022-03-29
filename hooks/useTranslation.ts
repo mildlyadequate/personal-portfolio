@@ -26,6 +26,15 @@ const LOCALE_DATA = {
         en: "Back to Top",
         de: "Zurück nach Oben",
     },
+    // ========== Form Success Notification ==========
+    form_success_title: {
+        en: "Success",
+        de: "Erfolg",
+    },
+    form_success_msg: {
+        en: "I received your message and will respond shortly.",
+        de: "Ich habe Ihre Nachricht erhalten und werde in Kürze antworten.",
+    },
 
     // ========== NAV ==========
     nav_mni_about: {

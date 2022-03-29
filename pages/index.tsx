@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
+import FormSuccessMessage from '../components/FormSuccessMessage'
 import AboutSection from '../components/IndexSections/AboutSection'
 import ContactSection from '../components/IndexSections/ContactSection'
 import ExperienceSection from '../components/IndexSections/ExperienceSection'
@@ -11,6 +13,7 @@ import { useTranslation } from '../hooks/useTranslation'
 const Home: NextPage = () => {
 
   let T = useTranslation();
+  const { query } = useRouter();
 
   return (
     <>
@@ -18,6 +21,7 @@ const Home: NextPage = () => {
         <title>{T.html_index_title}</title>
       </Head>
       <Layout>
+        {query.formsuccess == "true" && <FormSuccessMessage />}
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
