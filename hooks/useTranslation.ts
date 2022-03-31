@@ -319,8 +319,12 @@ const LOCALE_DATA = {
         de: "Projekte im Fokus",
     },
     work_other_projects_title: {
-        en: "Other Interesting Projects",
-        de: "Andere Interessante Projekte",
+        en: "Other Projects",
+        de: "Andere Projekte",
+    },
+    work_other_projects_subtext: {
+        en: "Scroll down or open the archive to see all of my projects in chronological order.",
+        de: "Scroll nach unten oder öffne das Archiv, um alle meine Projekte in chronologischer Reihenfolge zu sehen.",
     },
     work_other_subtitle: {
         en: "View the archive",

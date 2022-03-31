@@ -8,6 +8,8 @@ const ContactSection = () => {
 
     let T = useTranslation();
 
+    // https://docs.netlify.com/forms/setup/#submit-javascript-rendered-forms-with-ajax
+
     // const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     //     e.preventDefault();
 
@@ -32,10 +34,10 @@ const ContactSection = () => {
     return (
         <div
             id="contact"
-            className="py-24 mx-auto max-w-screen-sm items-center justify-center flex flex-col"
+            className="py-24 mx-auto max-w-screen-sm flex flex-col"
         >
             <h3
-                className="numbered-section-heading
+                className="numbered-section-heading text-white
                   before:font-mono before:text-2xl before:text-themeAccent
                 after:bg-gray-500"
             >
@@ -61,6 +63,7 @@ const ContactSection = () => {
                             Name:
                         </label>
                         <input
+                            name="name"
                             id="name"
                             type="text"
                             placeholder="Your name"
@@ -72,6 +75,7 @@ const ContactSection = () => {
                             Email:
                         </label>
                         <input
+                            name="email"
                             id="email"
                             type="email"
                             placeholder="Your.email@example.com"
@@ -83,6 +87,7 @@ const ContactSection = () => {
                             Message:
                         </label>
                         <textarea
+                            name="message"
                             id="message"
                             placeholder="Your message"
                             className="rounded focus:outline-none focus:ring-themeAccent focus:ring border-none"
@@ -91,7 +96,7 @@ const ContactSection = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-1/2 py-4 mx-auto border-themeAccent border mt-8 text-white hover:text-themeBackground hover:bg-themeAccent transition"
+                        className="w-1/2 py-4 mx-auto border-themeAccent border rounded mt-8 text-white hover:text-themeBackground hover:bg-themeAccent transition"
                     >
                         Send
                     </button>

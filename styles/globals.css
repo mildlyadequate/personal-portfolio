@@ -30,6 +30,10 @@ a:hover{
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }
 
+p {
+  color: #8A99BC;
+}
+
 p br{
   margin-bottom: 1rem;
 }

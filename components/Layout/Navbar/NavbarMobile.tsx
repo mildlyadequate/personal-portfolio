@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link as LinkScroll } from "react-scroll";
+import { useTranslation } from "../../../hooks/useTranslation";
+import StyledScrollButton from "../../StyledScrollButton";
 
 type TMobileNavbar = {
     isSidebarOpen: boolean,
@@ -15,7 +17,9 @@ const MobileNav = ({
     navDataList,
     navigationLinks,
 }: TMobileNavbar) => {
+
     const [scrollPosition, setScrollPosition] = useState(0);
+    let T = useTranslation();
 
     // Save scroll position on scroll
     const handleScroll = () => {
@@ -52,7 +56,7 @@ const MobileNav = ({
                     <ul className="p-0 m-0 w-full">
 
                         {navigationLinks.map((navLink, index) => (
-                            <li className="block relative py-2" key={index}>
+                            <li className="py-2" key={index}>
                                 <LinkScroll
                                     onClick={toggleSidebar}
                                     smooth={true}
@@ -65,6 +69,10 @@ const MobileNav = ({
                                 </LinkScroll>
                             </li>
                         ))}
+
+                        <li className="py-2">
+                            <StyledScrollButton onClick={toggleSidebar} to={"contact"} altText={T.nav_contact_button_alt} text={T.nav_contact_button} />
+                        </li>
                     </ul>
                 </nav>
 

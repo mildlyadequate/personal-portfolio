@@ -15,7 +15,7 @@ const AboutSection = () => {
     <div id="about" className="py-5 my-24 mx-auto max-w-screen-md items-center justify-center flex flex-col">
 
       <h3
-        className='numbered-section-heading
+        className='numbered-section-heading text-white 
                   before:font-mono before:text-2xl before:text-themeAccent
                 after:bg-gray-500'
       >
@@ -38,7 +38,7 @@ const AboutSection = () => {
               smooth={true}
               duration={500}
               offset={-50}
-              className={"text-white cursor-pointer hover:underline"}
+              className={"dark:text-white text-themeBackgroundLight cursor-pointer hover:underline"}
             >
               {T.experience_header}
             </LinkScroll>
@@ -48,7 +48,7 @@ const AboutSection = () => {
               smooth={true}
               duration={500}
               offset={-50}
-              className={"text-white cursor-pointer hover:underline"}
+              className={"dark:text-white text-themeBackgroundLight cursor-pointer hover:underline"}
             >
               {T.work_header}
             </LinkScroll>
@@ -56,9 +56,9 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className='relative max-w-[70%] lg:max-w-xs  mx-auto my-12 lg:m-0'>
-          <div className='block relative w-full bg-themeAccent bg-opacity-90 rounded mix-blend-screen group hover:bg-transparent transition '>
-            <Image src={img} className='rounded mix-blend-multiply group-hover:mix-blend-normal transition' layout='responsive' alt='Picture of me on top of a mountain' />
+        <div className='relative max-w-[70%] lg:max-w-xs mx-auto my-12 lg:m-0'>
+          <div className='block relative w-full dark:bg-themeAccent bg-opacity-90 rounded dark:mix-blend-screen group hover:bg-transparent transition'>
+            <Image src={img} className='rounded dark:mix-blend-multiply dark:opacity-80 opacity-60 group-hover:mix-blend-normal transition' layout='responsive' alt='Picture of me on top of a mountain' />
           </div>
         </div>
 

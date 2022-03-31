@@ -16,10 +16,9 @@ const Layout = ({ children }: Props) => {
 
     return (
         <>
-
             <Head>
                 <meta name="description" content={T.html_index_desc} />
-                <meta name="keywords" content="portfolio, sebastian schuler"/>
+                <meta name="keywords" content="portfolio, sebastian schuler" />
                 <meta name="robots" content="index,follow" />
 
                 <link rel="icon" href="/favicon.ico" />
@@ -35,12 +34,11 @@ const Layout = ({ children }: Props) => {
                 <meta property="og:image:height" content="599" />
                 <meta property="og:title" content="Portfolio: Sebastian Schuler" />
                 <meta property="og:description" content={T.html_index_desc} />
-                <meta property="og:url" content="http://sebastianschuler.com" /> {/* TODO: update url */}
-                <meta property="og:image" content="http://sebastianschuler.com/opengraph/og-image.jpg" />
-
+                <meta property="og:url" content="http://sebastian-schuler.de" /> {/* TODO: update url */}
+                <meta property="og:image" content="http://sebastian-schuler.de/opengraph/og-image.jpg" />
             </Head>
-
-            <div style={{ counterReset: "section 0" }} className='dark:bg-themeBackground px-6 sm:px-12 md:px-24 lg:px-36'>
+            
+            <div style={{ counterReset: "section 0" }} className={`bg-themeBackground px-6 sm:px-12 md:px-24 lg:px-36`}>
                 <Navbar isSidenavOpen={isSidenavOpen} setIsSidenavOpen={setIsSidenavOpen} />
                 <WidgetToTop />
                 <main onClick={() => { isSidenavOpen && (setIsSidenavOpen(false)) }}>
@@ -50,7 +48,6 @@ const Layout = ({ children }: Props) => {
                 </main>
                 <Footer />
             </div>
-
         </>
     );
 };

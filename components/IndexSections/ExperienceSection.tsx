@@ -59,7 +59,7 @@ const ExperienceSection = () => {
     <div id="experience" className="py-28 mx-auto max-w-screen-md items-center justify-center flex flex-col">
 
       <h3
-        className='numbered-section-heading
+        className='numbered-section-heading text-white 
                   before:font-mono before:text-2xl before:text-themeAccent
                 after:bg-gray-500'
       >

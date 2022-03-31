@@ -31,13 +31,13 @@ const WorkSection = () => {
     useEffect(() => {
         if (itemsExpanded) setItemsToShow(otherProjects.length);
         else setItemsToShow(6);
-    }, [itemsExpanded,otherProjects.length]);
+    }, [itemsExpanded, otherProjects.length]);
 
     return (
         <div id="work" className="py-5 my-24 mx-auto max-w-screen-lg items-center justify-center flex flex-col">
 
             <h3
-                className='numbered-section-heading
+                className='numbered-section-heading text-white
             before:font-mono before:text-2xl before:text-themeAccent
           after:bg-gray-500'
             >
@@ -101,9 +101,10 @@ const WorkSection = () => {
 
             ))}
 
+            {/* === OTHER PROJECTS === */}
             <h4 className='text-white text-2xl mb-2 mt-28 font-semibold' >{T.work_other_projects_title}</h4>
-            <Link href={T.work_archive_internal_link}><a className='text-themeAccent hover:underline'>{T.work_other_subtitle}</a></Link>
-
+            <p>{T.work_other_projects_subtext}</p>
+            <Link href={T.work_archive_internal_link}><a>{T.work_other_subtitle}</a></Link>
 
             <ul className='other-work-grid p-0 mt-12 relative grid list-none w-full'>
 
@@ -145,9 +146,7 @@ const WorkSection = () => {
                                                 <a className='hover:text-themeAccent hover:underline transition'>{workItem.title}</a>
                                             </Link>
                                         </h5>
-                                        <div className='text-themeMild'>
-                                            {workItem.desc}
-                                        </div>
+                                        <p>{workItem.desc}</p>
                                     </header>
                                     <footer>
                                         <ul className='flex items-end flex-grow flex-wrap list-none mt-5 text-gray-400 font-mono text-sm'>

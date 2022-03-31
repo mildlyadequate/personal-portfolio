@@ -40,7 +40,7 @@ const DesktopNav = ({
     return (
         <div
             className={`fixed top-0 right-0 left-0 py-5 px-6 sm:px-12 md:px-24 lg:px-36 transition duration-300 ease-in-out z-50 
-            ${scrollPosition > 10 ? "translate-y-[-95px] shadow-2xl shadow-themeBlack" : ""}`}
+            ${scrollPosition > 10 ? "translate-y-[-89px] shadow-2xl shadow-themeBlack" : ""}`}
         >
             <div
                 className={""}

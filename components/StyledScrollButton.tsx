@@ -5,12 +5,14 @@ type TStyledScrollButton = {
     to: string,
     altText: string,
     text: string,
+    onClick?: () => void
 }
 
-const StyledScrollButton = ({ to, altText, text }: TStyledScrollButton) => {
+const StyledScrollButton = ({ to, altText, text, onClick }: TStyledScrollButton) => {
     return (
         <div>
             <LinkScroll
+                onClick={onClick}
                 to={to}
                 smooth={true}
                 duration={500}
@@ -19,7 +21,7 @@ const StyledScrollButton = ({ to, altText, text }: TStyledScrollButton) => {
                 font-medium tracking-wide text-white
                 border border-themeAccent rounded
                 hover:bg-themeAccent hover:text-themeBackground hover:no-underline
-                cursor-pointer shadow-md
+                cursor-pointer shadow
                 transition duration-200"
                 aria-label={altText}
                 title={altText}

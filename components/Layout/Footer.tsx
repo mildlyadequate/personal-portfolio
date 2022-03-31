@@ -4,7 +4,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
     return (
-        <footer className="mx-auto pb-16">
+        <footer className="mx-auto pt-16 pb-16">
 
             <div className='w-full border-b border-themeMild mb-5' />
 
