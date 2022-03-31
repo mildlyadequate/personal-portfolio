@@ -137,7 +137,7 @@ const WorkSection = () => {
                                                 }
 
                                                 {workItem.linkExternal !== "" &&
-                                                    <a href={workItem.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink' title={T.archive_project_external_alt}>
+                                                    <a href={workItem.linkExternal} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink' title={T.archive_project_external_alt}>
                                                         <FiExternalLink className='brandIcon' />
                                                     </a>
                                                 }

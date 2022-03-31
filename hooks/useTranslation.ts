@@ -5,140 +5,144 @@ const LOCALE_DATA = {
 
     // ========== META ==========
     page_url: {
-        en: "https://sebastian-schuler.com/en",
-        de: "https://sebastian-schuler.com/de",
+        en: `https://sebastian-schuler.de/en`,
+        de: `https://sebastian-schuler.de`,
+    },
+    page_url_static: {
+        en: `https://sebastian-schuler.de`,
+        de: `https://sebastian-schuler.de`,
     },
     html_index_title: {
-        en: "Portfolio: Sebastian Schuler",
-        de: "Portfolio: Sebastian Schuler",
+        en: `Portfolio: Sebastian Schuler`,
+        de: `Portfolio: Sebastian Schuler`,
     },
     html_index_desc: {
-        en: "Sebastian Schuler is a Full-Stack Developer, Digital Marketing Specialist, UX Designer, and Android Developer.",
-        de: "Sebastian Schuler ist ein Full-Stack-Entwickler, Online Marketing Manager, UX-Designer und Android-Entwickler.",
+        en: `Sebastian Schuler is a Full-Stack Developer, Digital Marketing Specialist, UX Designer, and Android Developer.`,
+        de: `Sebastian Schuler ist ein Full-Stack-Entwickler, Online Marketing Manager, UX-Designer und Android-Entwickler.`,
     },
     html_language_selected: {
-        en: "English",
-        de: "German",
+        en: `English`,
+        de: `German`,
     },
 
     // ========== To Top Button ==========
     button_to_top_text: {
-        en: "Back to Top",
-        de: "Zurück nach Oben",
+        en: `Back to Top`,
+        de: `Zurück nach Oben`,
     },
     // ========== 404 Page - Page not found ==========
     page_notfound_title: {
-        en: "404 - Page not found",
-        de: "404 - Seite nicht gefunden",
+        en: `404 - Page not found`,
+        de: `404 - Seite nicht gefunden`,
     },
     page_notfound_subtitle: {
-        en: "PAGE NOT FOUND",
-        de: "SEITE NICHT GEFUNDEN",
+        en: `PAGE NOT FOUND`,
+        de: `SEITE NICHT GEFUNDEN`,
     },
     page_notfound_text: {
-        en: "The page you were looking for might have been removed, it's name changed, or is temporarily unavailable.",
-        de: "Die von dir gesuchte Seite wurde möglicherweise entfernt, ihr Name wurde geändert oder sie ist vorübergehend nicht verfügbar.",
+        en: `The page you were looking for might have been removed, it's name changed, or is temporarily unavailable.`,
+        de: `Die von dir gesuchte Seite wurde möglicherweise entfernt, ihr Name wurde geändert oder sie ist vorübergehend nicht verfügbar.`,
     },
     page_notfound_home_button: {
-        en: "Home",
-        de: "Startseite",
+        en: `Home`,
+        de: `Startseite`,
     },
 
     // ========== Form Success Notification ==========
     form_success_title: {
-        en: "Success",
-        de: "Erfolg",
+        en: `Success`,
+        de: `Erfolg`,
     },
     form_success_msg: {
-        en: "I received your message and will respond shortly.",
-        de: "Ich habe Ihre Nachricht erhalten und werde in Kürze antworten.",
+        en: `I received your message and will respond shortly.`,
+        de: `Ich habe Ihre Nachricht erhalten und werde in Kürze antworten.`,
     },
 
     // ========== NAV ==========
     nav_mni_about: {
-        en: "About",
-        de: "Über Mich",
+        en: `About`,
+        de: `Über Mich`,
     },
     nav_mni_experience: {
-        en: "Experience",
-        de: "Erfahrung",
+        en: `Experience`,
+        de: `Erfahrung`,
     },
     nav_mni_work: {
-        en: "Work",
-        de: "Projekte",
+        en: `Work`,
+        de: `Projekte`,
     },
     nav_contact_button: {
-        en: "Contact",
-        de: "Kontakt",
+        en: `Contact`,
+        de: `Kontakt`,
     },
     nav_contact_button_alt: {
-        en: "Send me a message",
-        de: "Schreib mir eine Nachricht"
+        en: `Send me a message`,
+        de: `Schreib mir eine Nachricht`
     },
     nav_menu_label: {
-        en: "Open menu",
-        de: "Menü öffnen",
+        en: `Open menu`,
+        de: `Menü öffnen`,
     },
 
     // ========== SIDE-ELEMENTS ==========
     side_email_title: {
-        en: "Send me an E-mail",
-        de: "Schick mir eine E-Mail",
+        en: `Send me an E-mail`,
+        de: `Schick mir eine E-Mail`,
     },
 
     // ========== HERO ==========
     hero_top_line: {
-        en: "Hi, my name is",
-        de: "Hi, mein Name ist",
+        en: `Hi, my name is`,
+        de: `Hi, mein Name ist`,
     },
     hero_typing_before: {
-        en: "I'm a ",
-        de: "Ich bin ",
+        en: `I'm a `,
+        de: `Ich bin `,
     },
     hero_typing_1: {
-        en: "Full-Stack Developer",
-        de: "Full-Stack Entwickler",
+        en: `Full-Stack Developer`,
+        de: `Full-Stack Entwickler`,
     },
     hero_typing_2: {
-        en: "Digital Marketing Specialist",
-        de: "Online Marketing Manager",
+        en: `Digital Marketing Specialist`,
+        de: `Online Marketing Manager`,
     },
     hero_typing_3: {
-        en: "Mobile Android Developer",
-        de: "Android Developer",
+        en: `Native Android Developer`,
+        de: `Android Developer`,
     },
     hero_typing_4: {
-        en: "UX Designer",
-        de: "UX Designer",
+        en: `UX Designer`,
+        de: `UX Designer`,
     },
     hero_description: {
-        en: "I'm passionate about bringing forward great and human-centered products; whether that's through development, UX Design, or Online Marketing.",
-        de: "Meine Leidenschaft ist es, großartige und menschenzentrierte Produkte zu schaffen, sei es durch Entwicklung, UX Design oder Online Marketing.",
+        en: `I'm passionate about bringing forward great and human-centered products; whether that's through development, UX Design, or Online Marketing.`,
+        de: `Meine Leidenschaft ist es, großartige und menschenzentrierte Produkte zu schaffen, sei es durch Entwicklung, UX Design oder Online Marketing.`,
     },
     hero_button_read_more: {
-        en: "Learn more",
-        de: "Mehr erfahren",
+        en: `Learn more`,
+        de: `Mehr erfahren`,
     },
     hero_button_read_more_alt: {
-        en: "Learn more about me",
-        de: "Mehr über mich erfahren",
+        en: `Learn more about me`,
+        de: `Mehr über mich erfahren`,
     },
     hero_language_switch_before: {
-        en: "My homepage offered in: ",
-        de: "Meine Homepage angeboten in: ",
+        en: `My homepage offered in: `,
+        de: `Meine Homepage angeboten in: `,
     },
     hero_language_switch_alt: {
-        en: "Die Sprache zu Deutsch ändern",
-        de: "Change the language to English",
+        en: `Die Sprache zu Deutsch ändern`,
+        de: `Change the language to English`,
     },
     // ========== ABOUT ==========
     about_header: {
-        en: "About Me",
-        de: "Über mich",
+        en: `About Me`,
+        de: `Über mich`,
     },
     about_image_alt:{
-        en: "Sebastian Schuler on top of a mountain in France",
-        de: "Sebastian Schuler auf dem Gipfel eines Berges in Frankreich",
+        en: `Sebastian Schuler on top of a mountain in France`,
+        de: `Sebastian Schuler auf dem Gipfel eines Berges in Frankreich`,
     },
     about_paragraph1: {
         en: `Hi there! My name is Sebastian and I enjoy creating applications as well as digital projects. My interest in development started back in 2012 
@@ -154,55 +158,55 @@ const LOCALE_DATA = {
         Trotz des Namens war der Fokus hier auf den drei Hauptrichtungen: Informatik, Marketing und UX Design.`,
     },
     about_paragraph_footer_1: {
-        en: "More details about me can be found in the next section ",
-        de: "Mehr Details zu mir sind im nächsten Abschnitt ",
+        en: `More details about me can be found in the next section `,
+        de: `Mehr Details zu mir sind im nächsten Abschnitt `,
     },
     about_paragraph_footer_2: {
-        en: ". You could also have a look at my ",
-        de: " zu finden. Alternativ kannst du auch direkt meine ",
+        en: `. You could also have a look at my `,
+        de: ` zu finden. Alternativ kannst du auch direkt meine `,
     },
     about_paragraph_footer_3: {
-        en: " straight away.",
-        de: " anschauen.",
+        en: ` straight away.`,
+        de: ` anschauen.`,
     },
     about_technologies_title: {
-        en: "Technologies",
-        de: "Technologien",
+        en: `Technologies`,
+        de: `Technologien`,
     },
     about_technologies_desc: {
-        en: "I've worked with:",
-        de: "mit denen ich gearbeitet habe:",
+        en: `I've worked with:`,
+        de: `mit denen ich gearbeitet habe:`,
     },
     about_tools_title: {
-        en: "Tools",
-        de: "Tools",
+        en: `Tools`,
+        de: `Tools`,
     },
     about_tools_desc: {
-        en: "I have experience with:",
-        de: "mit denen ich Erfahrung habe:",
+        en: `I have experience with:`,
+        de: `mit denen ich Erfahrung habe:`,
     },
     // ========== EXPERIENCE ==========
     experience_header: {
-        en: "Experience",
-        de: "Erfahrung",
+        en: `Experience`,
+        de: `Erfahrung`,
     },
 
     // Item 4: HSKL
     experience_item4_title: {
-        en: "HS KL",
-        de: "HS KL",
+        en: `HS KL`,
+        de: `HS KL`,
     },
     experience_item4_header: {
-        en: "Digital Media Marketing - BSc",
-        de: "Digital Media Marketing - BSc",
+        en: `Digital Media Marketing - BSc`,
+        de: `Digital Media Marketing - BSc`,
     },
     experience_item4_institution: {
-        en: "@University of Applied Sciences Kaiserslautern",
-        de: "@Hochschule Kaiserslautern",
+        en: `@University of Applied Sciences Kaiserslautern`,
+        de: `@Hochschule Kaiserslautern`,
     },
     experience_item4_time: {
-        en: "2017 - 2022",
-        de: "2017 - 2022",
+        en: `2017 - 2022`,
+        de: `2017 - 2022`,
     },
     experience_item4_desc: {
         en: `<ul> 
@@ -223,20 +227,20 @@ const LOCALE_DATA = {
 
     // Item 3: UXQB
     experience_item3_title: {
-        en: "UXQB",
-        de: "UXQB",
+        en: `UXQB`,
+        de: `UXQB`,
     },
     experience_item3_header: {
-        en: "Certified Professional for Usability and UX - Foundation Level",
-        de: "Certified Professional for Usability and UX - Foundation Level",
+        en: `Certified Professional for Usability and UX - Foundation Level`,
+        de: `Certified Professional for Usability and UX - Foundation Level`,
     },
     experience_item3_institution: {
-        en: "@International Software Quality Institute",
-        de: "@International Software Quality Institute",
+        en: `@International Software Quality Institute`,
+        de: `@International Software Quality Institute`,
     },
     experience_item3_time: {
-        en: "Completed in 2017",
-        de: "Abgeschlossen in 2017",
+        en: `Completed in 2017`,
+        de: `Abgeschlossen in 2017`,
     },
     experience_item3_desc: {
         en: `<p>The UXQB - CPUX-F certificate attests that I am familiar with the basic terms and concepts of usability and user experience, and that I'm able to
@@ -267,20 +271,20 @@ const LOCALE_DATA = {
 
     // Item 2: EDV Höhne
     experience_item2_title: {
-        en: "EDV Höhne",
-        de: "EDV Höhne",
+        en: `EDV Höhne`,
+        de: `EDV Höhne`,
     },
     experience_item2_header: {
-        en: "Software Developer / Internship",
-        de: "Software Entwickler / Praktikant",
+        en: `Software Developer / Internship`,
+        de: `Software Entwickler / Praktikant`,
     },
     experience_item2_institution: {
-        en: "@EDV Höhne",
-        de: "@EDV Höhne",
+        en: `@EDV Höhne`,
+        de: `@EDV Höhne`,
     },
     experience_item2_time: {
-        en: "2015 - 2016",
-        de: "2015 - 2016",
+        en: `2015 - 2016`,
+        de: `2015 - 2016`,
     },
     experience_item2_desc: {
         en: `<ul>
@@ -299,20 +303,20 @@ const LOCALE_DATA = {
 
     // Item 1: BBS
     experience_item1_title: {
-        en: "BBS SÜW",
-        de: "BBS SÜW",
+        en: `BBS SÜW`,
+        de: `BBS SÜW`,
     },
     experience_item1_header: {
-        en: "A-Level / Assistant for Application Development",
-        de: "Fachabitur / Assistent für Anwendungsentwicklung",
+        en: `A-Level / Assistant for Application Development`,
+        de: `Fachabitur / Assistent für Anwendungsentwicklung`,
     },
     experience_item1_institution: {
-        en: "@BBS SÜW",
-        de: "@BBS SÜW",
+        en: `@BBS SÜW`,
+        de: `@BBS SÜW`,
     },
     experience_item1_time: {
-        en: "2014 - 2015",
-        de: "2014 - 2015",
+        en: `2014 - 2015`,
+        de: `2014 - 2015`,
     },
     experience_item1_desc: {
         en: `<ul>
@@ -333,149 +337,149 @@ const LOCALE_DATA = {
 
     // ========== WORK ==========
     work_header: {
-        en: "Work",
-        de: "Projekte",
+        en: `Work`,
+        de: `Projekte`,
     },
     work_featured_overline: {
-        en: "Featured Project",
-        de: "Projekte im Fokus",
+        en: `Featured Project`,
+        de: `Projekte im Fokus`,
     },
     work_featured_image_alt: {
-        en: "Thumbnail for ",
-        de: "Vorschaubild für ",
+        en: `Thumbnail for `,
+        de: `Vorschaubild für `,
     },
     work_other_projects_title: {
-        en: "Other Projects",
-        de: "Andere Projekte",
+        en: `Other Projects`,
+        de: `Andere Projekte`,
     },
     work_other_projects_subtext: {
-        en: "Scroll down or open the archive to see all of my projects in chronological order.",
-        de: "Scroll nach unten oder öffne das Archiv, um alle meine Projekte in chronologischer Reihenfolge zu sehen.",
+        en: `Scroll down or open the archive to see all of my projects in chronological order.`,
+        de: `Scroll nach unten oder öffne das Archiv, um alle meine Projekte in chronologischer Reihenfolge zu sehen.`,
     },
     work_other_subtitle: {
-        en: "View the archive",
-        de: "Archiv öffnen",
+        en: `View the archive`,
+        de: `Archiv öffnen`,
     },
     work_archive_internal_link: {
-        en: "/archive",
-        de: "/archiv",
+        en: `/archive`,
+        de: `/archiv`,
     },
     work_other_button_show_more: {
-        en: "Show More",
-        de: "Mehr anzeigen",
+        en: `Show More`,
+        de: `Mehr anzeigen`,
     },
     work_other_button_show_less: {
-        en: "Show Less",
-        de: "Weniger anzeigen",
+        en: `Show Less`,
+        de: `Weniger anzeigen`,
     },
 
     // ========== CONTACT ==========
     contact_header: {
-        en: "Contact Me",
-        de: "Schreib mir eine Nachricht",
+        en: `Contact Me`,
+        de: `Schreib mir eine Nachricht`,
     },
 
     // ============================== ARCHIVE PAGE ==============================
 
     archive_page_title: {
-        en: "Archive - Portfolio: Sebastian Schuler",
-        de: "Archiv - Portfolio: Sebastian Schuler",
+        en: `Archive - Portfolio: Sebastian Schuler`,
+        de: `Archiv - Portfolio: Sebastian Schuler`,
     },
     archive_header: {
-        en: "Archive",
-        de: "Archiv",
+        en: `Archive`,
+        de: `Archiv`,
     },
     archive_subheader: {
-        en: "A list of things I've worked on.",
-        de: "Eine Liste von Projekten, an denen ich gearbeitet habe.",
+        en: `A list of things I've worked on.`,
+        de: `Eine Liste von Projekten, an denen ich gearbeitet habe.`,
     },
     archive_table_year: {
-        en: "Year",
-        de: "Jahr",
+        en: `Year`,
+        de: `Jahr`,
     },
     archive_table_title: {
-        en: "Title",
-        de: "Titel",
+        en: `Title`,
+        de: `Titel`,
     },
     archive_table_tags: {
-        en: "Technology",
-        de: "Technologie",
+        en: `Technology`,
+        de: `Technologie`,
     },
     archive_table_links: {
-        en: "Links",
-        de: "Links",
+        en: `Links`,
+        de: `Links`,
     },
     archive_table_mobile: {
-        en: "Projects",
-        de: "Projekte",
+        en: `Projects`,
+        de: `Projekte`,
     },
     archive_project_link_alt: {
-        en: "Project details: ",
-        de: "Projektdetails: ",
+        en: `Project details: `,
+        de: `Projektdetails: `,
     },
     archive_project_external_alt: {
-        en: "To the app / project",
-        de: "Zur App / Projekt",
+        en: `To the app / project`,
+        de: `Zur App / Projekt`,
     },
 
     // ============================== PROJECTS RECURRING ==============================
 
     project_topline_university: {
-        en: "University of Applied Sciences Kaiserslautern",
-        de: "Hochschule Kaiserslautern",
+        en: `University of Applied Sciences Kaiserslautern`,
+        de: `Hochschule Kaiserslautern`,
     },
 
     project_topline_personal: {
-        en: "Personal Project",
-        de: "Eigenes Projekt",
+        en: `Personal Project`,
+        de: `Eigenes Projekt`,
     },
 
     project_section_intro_heading: {
-        en: "Introduction",
-        de: "Einführung",
+        en: `Introduction`,
+        de: `Einführung`,
     },
     project_section_gallery_heading: {
-        en: "Gallery",
-        de: "Galerie",
+        en: `Gallery`,
+        de: `Galerie`,
     },
 
     // ========== BREADCRUMBS ==========
     index_breadcrumb_name: {
-        en: "Home",
-        de: "Startseite",
+        en: `Home`,
+        de: `Startseite`,
     },
     archive_breadcrumb_name: {
-        en: "Archive",
-        de: "Archiv",
+        en: `Archive`,
+        de: `Archiv`,
     },
     archive_link_text: {
-        en: "To the Archive",
-        de: "Zum Archiv",
+        en: `To the Archive`,
+        de: `Zum Archiv`,
     },
     // ========== Project Post ==========
     project_table_of_contents_title: {
-        en: "Table of contents",
-        de: "Inhaltsverzeichnis",
+        en: `Table of contents`,
+        de: `Inhaltsverzeichnis`,
     },
     // ========== ZOOMED IMAGE ==========
     zoomed_image_desc_numbering: {
-        en: "Fig.",
-        de: "Abb.",
+        en: `Fig.`,
+        de: `Abb.`,
     },
 
     // ============================== PROJECT MARKETING ACADEMY ==============================
 
     project_marketingacademy_internal_link: {
-        en: "/archive/marketing-academy",
-        de: "/archiv/marketing-akademie",
+        en: `/archive/marketing-academy`,
+        de: `/archiv/marketing-akademie`,
     },
     project_marketingacademy_page_title: {
-        en: "Marketing Academy - Portfolio: Sebastian Schuler",
-        de: "Marketing Akademie - Portfolio: Sebastian Schuler",
+        en: `Marketing Academy - Portfolio: Sebastian Schuler`,
+        de: `Marketing Akademie - Portfolio: Sebastian Schuler`,
     },
     project_marketingacademy_title: {
-        en: "Marketing Academy",
-        de: "Marketing Akademie",
+        en: `Marketing Academy`,
+        de: `Marketing Akademie`,
     },
     project_marketingacademy_desc: {
         en: `Development of a CMS based website for the Marketing Academy of the University of Kaiserslautern 
@@ -500,8 +504,8 @@ const LOCALE_DATA = {
         basierend auf Lehrinhalten, Studienprojekten, Drittmittelprojekten oder darüber hinausgehende Kooperationen.`,
     },
     project_marketingacademy_section_research_heading: {
-        en: "Competitor Research",
-        de: "Competitor Research",
+        en: `Competitor Research`,
+        de: `Competitor Research`,
     },
     project_marketingacademy_section_research_p1: {
         en: `At the beginning of the project, our focus was on building a meaningful information architecture. For this purpose, we analyzed numerous direct and indirect competitors
@@ -516,8 +520,8 @@ const LOCALE_DATA = {
         und Risiken bedacht werden, im Beispiel der 'News' Seite ist ein News System notwendig. Mögliche Risiken waren hierbei die Wartung und die Abhängigkeit an Plugins.`,
     },
     project_marketingacademy_section_design_heading: {
-        en: "Design",
-        de: "Design",
+        en: `Design`,
+        de: `Design`,
     },
     project_marketingacademy_section_design_html: {
         en: `<p>In developing the design, we took our inspiration from the first project of the Marketing Academy, the website of the fitness application 
@@ -528,8 +532,8 @@ const LOCALE_DATA = {
         Design-Prototyp in Adobe XD erstellt und auf Usability getestet.</p>`,
     },
     project_marketingacademy_section_technology_heading: {
-        en: "Technology selection",
-        de: "Wahl der Technologie",
+        en: `Technology selection`,
+        de: `Wahl der Technologie`,
     },
     project_marketingacademy_section_technology_p1: {
         en: `All the information gathered so far is now used to select the right technology for the project. All current CMS and 
@@ -557,8 +561,8 @@ const LOCALE_DATA = {
         </ul>`,
     },
     project_marketingacademy_section_plugins_heading: {
-        en: "Plugins",
-        de: "Plugins",
+        en: `Plugins`,
+        de: `Plugins`,
     },
     project_marketingacademy_section_plugins_p1: {
         en: `
@@ -585,8 +589,8 @@ const LOCALE_DATA = {
         </ul>`,
     },
     project_marketingacademy_section_implementation_heading: {
-        en: "Implementation",
-        de: "Implementierung",
+        en: `Implementation`,
+        de: `Implementierung`,
     },
     project_marketingacademy_section_implementation_p1: {
         en: `Thanks to Elementor, the actual implementation is relatively simple: we specified what kind of templating to use for each page, e.g. 
@@ -596,8 +600,8 @@ const LOCALE_DATA = {
         manuell aus diesem Erstellt. Einzigartige Seiten wie die Start- und Kontaktseite haben kein weiteres Templating.`,
     },
     project_marketingacademy_section_files_heading: {
-        en: "Documentation",
-        de: "Dokumentation",
+        en: `Documentation`,
+        de: `Dokumentation`,
     },
     project_marketingacademy_section_files_p1: {
         en: `
@@ -635,16 +639,16 @@ const LOCALE_DATA = {
     // ============================== PROJECT STUDIENVERZEICHNIS ==============================
 
     project_studienverzeichnis_internal_link: {
-        en: "/archive/studienverzeichnis",
-        de: "/archiv/studienverzeichnis",
+        en: `/archive/studienverzeichnis`,
+        de: `/archiv/studienverzeichnis`,
     },
     project_studienverzeichnis_page_title: {
-        en: "University Course Directory - Portfolio: Sebastian Schuler",
-        de: "Studienverzeichnis - Portfolio: Sebastian Schuler",
+        en: `University Course Directory - Portfolio: Sebastian Schuler`,
+        de: `Studienverzeichnis - Portfolio: Sebastian Schuler`,
     },
     project_studienverzeichnis_title: {
-        en: "University Course Directory",
-        de: "Studienverzeichnis",
+        en: `University Course Directory`,
+        de: `Studienverzeichnis`,
     },
     project_studienverzeichnis_desc: {
         en: `Development of a website and the appropriate backend to display and search all available university study programs in Germany. Also known as 'Studienverzeichnis' in German.`,
@@ -665,8 +669,8 @@ const LOCALE_DATA = {
         wurde allerdings nach Vollendung wieder offline genommen.`,
     },
     project_studienverzeichnis_section_datacollection_heading: {
-        en: "Data Collection",
-        de: "Erhebung der Daten",
+        en: `Data Collection`,
+        de: `Erhebung der Daten`,
     },
     project_studienverzeichnis_section_datacollection_p1: {
         en: `This is where the first problems came up: I was able to request the data of all courses from the German authorities, however, this process would've not only taken too long,
@@ -686,8 +690,8 @@ const LOCALE_DATA = {
         <a href="/files/daad_studiengangs_parser.py">hier</a> zu finden (Kenntnisse in Python empfohlen).`,
     },
     project_studienverzeichnis_section_technology_heading: {
-        en: "Technology",
-        de: "Technologie",
+        en: `Technology`,
+        de: `Technologie`,
     },
     project_studienverzeichnis_section_technology_p1: {
         en: `Since this is a university project, i.e. a very limited amount of time and no need to continue running the website after completion, I decided to use WordPress as CMS.
@@ -707,8 +711,8 @@ const LOCALE_DATA = {
         mit der richtigen Technologie zu einem fertigen Produkt entwickelt werden könnte.`,
     },
     project_studienverzeichnis_section_informationarchitecture_heading: {
-        en: "Information Architecture",
-        de: "Informationsarchitektur",
+        en: `Information Architecture`,
+        de: `Informationsarchitektur`,
     },
     project_studienverzeichnis_section_informationarchitecture_p1: {
         en: `The two fundamental parts of the information architecture are the degree courses and institutions. A single course element contains important dates, 
@@ -740,20 +744,20 @@ const LOCALE_DATA = {
     // ============================== PROJECT CONVERTEE ==============================
 
     project_convertee_internal_link: {
-        en: "/archive/convertee",
-        de: "/archiv/convertee",
+        en: `/archive/convertee`,
+        de: `/archiv/convertee`,
     },
     project_convertee_page_title: {
-        en: "University Course Directory - Portfolio: Sebastian Schuler",
-        de: "Studienverzeichnis - Portfolio: Sebastian Schuler",
+        en: `University Course Directory - Portfolio: Sebastian Schuler`,
+        de: `Studienverzeichnis - Portfolio: Sebastian Schuler`,
     },
     project_convertee_title: {
-        en: "Convertee - Convert Anything",
-        de: "Convertee - Alles konvertieren",
+        en: `Convertee - Convert Anything`,
+        de: `Convertee - Alles konvertieren`,
     },
     project_convertee_desc: {
         en: `A compact and user-friendly conversion app for Android systems. Easily convert a large number of units, including currencies.`,
-        de: `Eine kompakte und benutzerfreundliche Konvertierungsapp für Android Systeme. Einfaches Konvertieren einer großen Anzahl von Einheiten, inklusive Währungen.`,
+        de: `Eine kompakte und nutzerfreundliche Konvertierungsapp für Android Systeme. Einfaches Konvertieren einer großen Anzahl von Einheiten, inklusive Währungen.`,
     },
     project_convertee_section_introduction_p1: {
         en: `Convertee was a spur-of-the-moment idea, as I couldn't find a good and at the same time free conversion app. The biggest problems were either
@@ -762,8 +766,8 @@ const LOCALE_DATA = {
         sehr schlechte User Experience, zu starke Monetarisierung oder ungenaue Konvertierung.`,
     },
     project_convertee_section_technology_heading: {
-        en: "Technology",
-        de: "Technologie",
+        en: `Technology`,
+        de: `Technologie`,
     },
     project_convertee_section_technology_p1: {
         en: `The whole thing is programmed in native Android / Java and thus has the best possible performance. Particularly noteworthy is the choice of BigInteger and BigDecimal 
@@ -781,22 +785,101 @@ const LOCALE_DATA = {
     // ============================== PROJECT PORTFOLIO HOMEPAGE ==============================
 
     project_portfolio_internal_link: {
-        en: "/archive/portfolio-homepage",
-        de: "/archiv/portfolio-homepage",
+        en: `/archive/portfolio-homepage`,
+        de: `/archiv/portfolio-homepage`,
     },
     project_portfolio_page_title: {
-        en: "Portfolio Homepage - Portfolio: Sebastian Schuler",
-        de: "Portfolio Webseite - Portfolio: Sebastian Schuler",
+        en: `Portfolio Homepage - Portfolio: Sebastian Schuler`,
+        de: `Portfolio Webseite - Portfolio: Sebastian Schuler`,
     },
     project_portfolio_title: {
-        en: "Portfolio Homepage",
-        de: "Portfolio Webseite",
+        en: `Portfolio Homepage`,
+        de: `Portfolio Webseite`,
     },
     project_portfolio_desc: {
-        en: ``,
-        de: ``,
+        en: `My personal portfolio homepage, in an appealing design. There is a documentation, links, and images for each of my projects.`,
+        de: `Meine persönliche Portfolio-Homepage, in einem ansprechenden Design. Für jedes meiner Projekte gibt es eine Dokumentation, Links und Bilder.`,
     },
 
+    // ============================== PROJECT COPSI ==============================
+
+    project_copsi_internal_link: {
+        en: `/archive/copsi`,
+        de: `/archiv/copsi`,
+    },
+    project_copsi_page_title: {
+        en: `Copsi - Portfolio: Sebastian Schuler`,
+        de: `Copsi - Portfolio: Sebastian Schuler`,
+    },
+    project_copsi_title: {
+        en: `Copsi - Organisation and communication`,
+        de: `Copsi - Organisation und Kommunikation`,
+    },
+    project_copsi_desc: {
+        en: `Copsi is a desktop application that is used for communication and the exchange of documents between professors, assistants, and students of the
+        University of Applied Sciences Kaiserslautern.`,
+        de: `Copsi ist eine Desktop-Applikation, die zur Kommunikation und zum Austausch von Dokumenten zwischen Professoren, Assistenten und den Studierenden der
+        Hochschule Kaiserslautern dient.`,
+    },
+    project_copsi_section_introduction_p1: {
+        en: ``,
+        de: `Copsi ist eine Desktop-Applikation, die zur Kommunikation und zum Austausch von Dokumenten
+        zwischen Professoren, Assistenten und den Studierenden der Hochschule Kaiserslautern dient.
+        Der aktuelle Austausch von Informationen, Neuigkeiten oder relevanten Daten zu jeweiligen
+        Modulen sieht vor, dass die Studierenden auf verschiedene Plattformen wie das OLAT-System,
+        Google Drive, Studierenden E-Mails oder auch auf Instant-Messaging-Dienste wie WhatsApp
+        zurückgreifen müssen, um sich halbwegs einen Überblick verschaffen zu können. Informationen
+        werden schnell übersehen und die direkte Kommunikation mit Kommilitonen ist oftmals nicht
+        möglich, da hierfür die Studierenden gezielt im Campusboard nach jeweiligen Kommilitonen im
+        Personenverzeichnis suchen müssen, vorausgesetzt es besteht überhaupt Kontakt.`,
+    },
+    project_copsi_section_introduction_p2: {
+        en: ``,
+        de: `Aufgrund dieser Unzufriedenheit der verschiedenen Dienste, die im Studien-Alltag genutzt
+        werden müssen entstand die Idee eine Software zu kreieren, die die Kommunikation sowie den
+        Datenaustausch vereinfachen soll. Dies soll über einen zentralen Server in Verbindung mit einer
+        Datenbank erfolgen.`,
+    },
+    project_copsi_section_objective_heading: {
+        en: `Project objective`,
+        de: `Projektziel`,
+    },
+    project_copsi_section_objective_p: {
+        en: `Project objective`,
+        de: `Das Ziel dieses Studienprojektes ist ein Minimum Viable Product (MVP), das die Struktur von
+        Kursen, Channels und Nachrichten aus einer Datenbank lesen und darstellen kann. Zusätzliche
+        Funktionen wären zum Beispiel das Hoch- und Herunterladen von Dateien und User Rechte.`,
+    },
+
+    project_copsi_section_environment_heading: {
+        en: `Project environment`,
+        de: `Projektumfeld`,
+    },
+    project_copsi_section_environment_p: {
+        en: `The project was commissioned by Prof. Dr. Dieter Wallach as a lecturer at Kaiserslautern University. 
+        Our project team consisting of Caroline Miller, Sebastian Schuler and Philipp Spandl, accepted this assignment 
+        as a student project. Prof. Dr. Dieter Wallach served as the project team's direct contact person.`,
+        de: `Das Projekt wurde von Prof. Dr. Dieter Wallach als Dozent der Hochschule Kaiserslautern in
+        Auftrag gegeben. Unser Projektteam bestehend aus Caroline Miller, Sebastian Schuler und
+        Philipp Spandl hat als Studentisches Projektteam der Hochschule Kaiserslautern diesen Auftrag
+        angenommen. Somit dient Prof. Dr. Dieter Wallach als direkter Ansprechpartner des Projektteams.`,
+    },
+
+    project_copsi_section_files_heading: {
+        en: `Documentation & Download`,
+        de: `Dokumentation & Download`,
+    },
+    project_copsi_section_files_p: {
+        en: `
+        <ul>
+            <li><a target="_blank" href="/files/docs-copsi.pdf">Documentation (German) [PDF]</a></li>
+        </ul>`,
+        de: `
+        <ul>
+            <li><a target="_blank" href="/files/docs-copsi.pdf">Dokumentation [PDF]</a></li>
+        </ul>`,
+    },
+    
     // x_min_remaining: (min:number) => ({
     //     de: `Es sind noch ${sec} Minuten verbleibend`,
     //     en: `There are ${min} minutes remaining`

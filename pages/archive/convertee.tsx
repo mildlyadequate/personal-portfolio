@@ -36,8 +36,8 @@ const Convertee = () => {
                 <meta property="og:image:height" content="599" />
                 <meta property="og:title" content={T.project_convertee_page_title} />
                 <meta property="og:description" content={T.html_index_desc} />
-                <meta property="og:url" content="http://sebastianschuler.com" /> {/* TODO: update url */}
-                <meta property="og:image" content="http://sebastianschuler.com/opengraph/og-image.jpg" />
+                <meta property="og:url" content={T.page_url+T.project_copsi_internal_link} />
+                <meta property="og:image" content={T.page_url_static+"/opengraph/og-image.jpg"} />
             </Head>
 
             <Layout>

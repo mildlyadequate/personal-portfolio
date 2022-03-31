@@ -36,6 +36,14 @@ const Archive = () => {
     <>
       <Head>
         <title>{T.archive_page_title}</title>
+
+        <meta property="og:image:width" content="1145" />
+        <meta property="og:image:height" content="599" />
+        <meta property="og:title" content={T.project_marketingacademy_page_title} />
+        <meta property="og:description" content={T.html_index_desc} />
+        <meta property="og:url" content={T.page_url+T.project_copsi_internal_link} />
+        <meta property="og:image" content={T.page_url_static+"/opengraph/og-image.jpg"} />
+        
       </Head>
 
       <Layout>
@@ -93,7 +101,7 @@ const Archive = () => {
                         }
 
                         {project.linkExternal !== "" &&
-                          <a href={project.linkGithub} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'><FiExternalLink className='archive-icon' /></a>
+                          <a href={project.linkExternal} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'><FiExternalLink className='archive-icon' /></a>
                         }
 
                       </div>
@@ -139,7 +147,7 @@ const Archive = () => {
                       }
 
                       {project.linkExternal !== "" &&
-                        <a href={project.linkGithub} title={T.archive_project_external_alt} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'>
+                        <a href={project.linkExternal} title={T.archive_project_external_alt} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'>
                           <FiExternalLink className='archive-icon' />
                         </a>
                       }

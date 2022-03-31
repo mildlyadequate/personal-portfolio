@@ -32,10 +32,10 @@ const Layout = ({ children }: Props) => {
 
                 <meta property="og:image:width" content="1145" />
                 <meta property="og:image:height" content="599" />
-                <meta property="og:title" content="Portfolio: Sebastian Schuler" />
+                <meta property="og:title" content={T.html_index_title} />
                 <meta property="og:description" content={T.html_index_desc} />
-                <meta property="og:url" content="http://sebastian-schuler.de" /> {/* TODO: update url */}
-                <meta property="og:image" content="http://sebastian-schuler.de/opengraph/og-image.jpg" />
+                <meta property="og:url" content={T.page_url} />
+                <meta property="og:image" content={T.page_url_static+"/opengraph/og-image.jpg"} />
             </Head>
             
             <div style={{ counterReset: "section 0" }} className={`bg-themeBackground px-6 sm:px-12 md:px-24 lg:px-36`}>
