@@ -36,13 +36,13 @@ const WorkSection = () => {
     return (
         <div id="work" className="py-5 my-24 mx-auto max-w-screen-lg items-center justify-center flex flex-col">
 
-            <h3
+            <h2
                 className='numbered-section-heading text-white
             before:font-mono before:text-2xl before:text-themeAccent
           after:bg-gray-500'
             >
                 {T.work_header}
-            </h3>
+            </h2>
 
             {featuredProjects.map((item, index) => (
 

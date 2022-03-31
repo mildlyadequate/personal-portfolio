@@ -31,7 +31,7 @@ const HeroSection = React.memo(() => {
         <div style={{ height: "calc(100vh - 71px)" }} className="py-5 mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-screen-lg items-start justify-center flex flex-col">
             <p className="font-mono text-themeAccent font-normal text-xl mb-5">{T.hero_top_line}</p>
             <h1 className="text-white leading-none text-clampTitle mb-3 font-bold ml-[-2px]">Sebastian Schuler</h1>
-            <h2 className="text-white leading-none text-clampSubtitle mb-3 font-bold">
+            <span className="text-white leading-none text-clampSubtitle mb-3 font-bold">
                 {T.hero_typing_before}
                 {width && (width <= 480 ? <br /> : <></>)}
                 <ReactTypingEffect
@@ -42,7 +42,7 @@ const HeroSection = React.memo(() => {
                     eraseSpeed={100}
                     speed={250}
                 />
-            </h2>
+            </span>
             <p className="text-lg text-themeMild">{T.hero_description}</p>
 
             <div className="mt-8">

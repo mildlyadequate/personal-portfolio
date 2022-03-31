@@ -1,0 +1,30 @@
+/* Transition Experiences */
+
+.experience-transition-enter {
+    opacity: 0;
+}
+
+.experience-transition-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.experience-transition-exit {
+    opacity: 1;
+}
+
+.experience-transition-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+/* Other Work Transitions */
+
+.other-work-transition-enter {
+    opacity: 0;
+}
+
+.other-work-transition-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}

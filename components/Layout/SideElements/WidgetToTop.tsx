@@ -32,9 +32,9 @@ const WidgetToTop = () => {
                 onClick={() => scrollToTop()}
                 className={`${scrollPosition > 80 ? 'opacity-100' : 'opacity-0'} flex px-4 py-2 bg-themeBackgroundLight rounded-full shadow
                 fixed bottom-8 left-auto right-5 z-10 toTopIcon-link cursor-pointer transition group
-                hover:bg-themeAccent`}
+                hover:bg-themeAccent text-white hover:text-themeBackground`}
             >
-                <p className='self-center text-white group-hover:text-themeBackground'>{T.button_to_top_text}</p>
+                {T.button_to_top_text}
             </button>
         </>
 

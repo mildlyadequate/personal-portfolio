@@ -58,13 +58,13 @@ const ExperienceSection = () => {
   return (
     <div id="experience" className="py-28 mx-auto max-w-screen-md items-center justify-center flex flex-col">
 
-      <h3
+      <h2
         className='numbered-section-heading text-white 
                   before:font-mono before:text-2xl before:text-themeAccent
                 after:bg-gray-500'
       >
         {T.experience_header}
-      </h3>
+      </h2>
 
 
       <div className='flex flex-row w-full'>

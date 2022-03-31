@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import '../styles/hamburger-icon.css'
 import '../styles/section-styles.css'
 import '../styles/icons.css'
+import '../styles/transitions.css'
 import type { AppProps } from 'next/app'
 import 'react-image-lightbox/style.css';
 

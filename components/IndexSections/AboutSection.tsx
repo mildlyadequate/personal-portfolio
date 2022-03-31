@@ -14,13 +14,13 @@ const AboutSection = () => {
   return (
     <div id="about" className="py-5 my-24 mx-auto max-w-screen-md items-center justify-center flex flex-col">
 
-      <h3
+      <h2
         className='numbered-section-heading text-white 
                   before:font-mono before:text-2xl before:text-themeAccent
                 after:bg-gray-500'
       >
         {T.about_header}
-      </h3>
+      </h2>
 
       <div className={`block lg:grid lg:grid-cols-about gap-12`}>
 
