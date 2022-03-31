@@ -13,7 +13,7 @@ import { useTranslation } from '../hooks/useTranslation'
 const Home: NextPage = () => {
 
   let T = useTranslation();
-  const { query } = useRouter();
+  const {query} = useRouter();
 
   return (
     <>
