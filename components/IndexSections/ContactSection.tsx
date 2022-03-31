@@ -8,43 +8,21 @@ const ContactSection = () => {
 
     let T = useTranslation();
 
-    // https://docs.netlify.com/forms/setup/#submit-javascript-rendered-forms-with-ajax
-
-    // const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    //     e.preventDefault();
-
-    //     console.log('Sending')
-
-    //     let data = {
-    //         name,
-    //         email,
-    //         message
-    //     }
-
-    //     fetch('/api/contact-form', {
-    //         method: 'POST',
-    //         // headers: {
-    //         //     'Accept': 'application/json, text/plain, */*',
-    //         //     'Content-Type': 'application/json'
-    //         // },
-    //         body: JSON.stringify(data)
-    //     })
-    // }
-
     return (
         <div
             id="contact"
             className="py-24 mx-auto max-w-screen-sm flex flex-col"
         >
-            <h3
+            <h2
                 className="numbered-section-heading text-white
                   before:font-mono before:text-2xl before:text-themeAccent
                 after:bg-gray-500"
             >
                 {T.contact_header}
-            </h3>
+            </h2>
 
             <div className="flex w-full">
+
                 <form
                     name="contactme"
                     action="?formsuccess=true"
