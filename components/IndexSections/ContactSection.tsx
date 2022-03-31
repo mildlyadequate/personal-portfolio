@@ -1,5 +1,6 @@
 import React, { FormEvent, useState } from "react";
 import { useTranslation } from "../../hooks/useTranslation";
+import SectionHeading from "../IndexComponents/SectionHeading";
 
 const ContactSection = () => {
     const [name, setName] = useState("");
@@ -13,13 +14,8 @@ const ContactSection = () => {
             id="contact"
             className="py-24 mx-auto max-w-screen-sm flex flex-col"
         >
-            <h2
-                className="numbered-section-heading text-white
-                  before:font-mono before:text-2xl before:text-themeAccent
-                after:bg-gray-500"
-            >
-                {T.contact_header}
-            </h2>
+
+            <SectionHeading text={T.contact_header} paddingBottom={true} />
 
             <div className="flex w-full">
 

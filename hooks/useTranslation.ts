@@ -26,6 +26,24 @@ const LOCALE_DATA = {
         en: "Back to Top",
         de: "Zurück nach Oben",
     },
+    // ========== 404 Page - Page not found ==========
+    page_notfound_title: {
+        en: "404 - Page not found",
+        de: "404 - Seite nicht gefunden",
+    },
+    page_notfound_subtitle: {
+        en: "PAGE NOT FOUND",
+        de: "SEITE NICHT GEFUNDEN",
+    },
+    page_notfound_text: {
+        en: "The page you were looking for might have been removed, it's name changed, or is temporarily unavailable.",
+        de: "Die von dir gesuchte Seite wurde möglicherweise entfernt, ihr Name wurde geändert oder sie ist vorübergehend nicht verfügbar.",
+    },
+    page_notfound_home_button: {
+        en: "Home",
+        de: "Startseite",
+    },
+
     // ========== Form Success Notification ==========
     form_success_title: {
         en: "Success",
@@ -110,13 +128,17 @@ const LOCALE_DATA = {
         de: "Meine Homepage angeboten in: ",
     },
     hero_language_switch_alt: {
-        en: "Die Sprache zu Englisch ändern",
-        de: "Change the language to German",
+        en: "Die Sprache zu Deutsch ändern",
+        de: "Change the language to English",
     },
     // ========== ABOUT ==========
     about_header: {
         en: "About Me",
         de: "Über mich",
+    },
+    about_image_alt:{
+        en: "Sebastian Schuler on top of a mountain in France",
+        de: "Sebastian Schuler auf dem Gipfel eines Berges in Frankreich",
     },
     about_paragraph1: {
         en: `Hi there! My name is Sebastian and I enjoy creating applications as well as digital projects. My interest in development started back in 2012 
@@ -318,6 +340,10 @@ const LOCALE_DATA = {
         en: "Featured Project",
         de: "Projekte im Fokus",
     },
+    work_featured_image_alt: {
+        en: "Thumbnail for ",
+        de: "Vorschaubild für ",
+    },
     work_other_projects_title: {
         en: "Other Projects",
         de: "Andere Projekte",
@@ -383,6 +409,14 @@ const LOCALE_DATA = {
         en: "Projects",
         de: "Projekte",
     },
+    archive_project_link_alt: {
+        en: "Project details: ",
+        de: "Projektdetails: ",
+    },
+    archive_project_external_alt: {
+        en: "To the app / project",
+        de: "Zur App / Projekt",
+    },
 
     // ============================== PROJECTS RECURRING ==============================
 
@@ -432,8 +466,8 @@ const LOCALE_DATA = {
     // ============================== PROJECT MARKETING ACADEMY ==============================
 
     project_marketingacademy_internal_link: {
-        en: "/project/marketing-academy",
-        de: "/projekt/marketing-akademie",
+        en: "/archive/marketing-academy",
+        de: "/archiv/marketing-akademie",
     },
     project_marketingacademy_page_title: {
         en: "Marketing Academy - Portfolio: Sebastian Schuler",
@@ -601,8 +635,8 @@ const LOCALE_DATA = {
     // ============================== PROJECT STUDIENVERZEICHNIS ==============================
 
     project_studienverzeichnis_internal_link: {
-        en: "/project/studienverzeichnis",
-        de: "/projekt/studienverzeichnis",
+        en: "/archive/studienverzeichnis",
+        de: "/archiv/studienverzeichnis",
     },
     project_studienverzeichnis_page_title: {
         en: "University Course Directory - Portfolio: Sebastian Schuler",
@@ -706,8 +740,8 @@ const LOCALE_DATA = {
     // ============================== PROJECT CONVERTEE ==============================
 
     project_convertee_internal_link: {
-        en: "/project/convertee",
-        de: "/projekt/convertee",
+        en: "/archive/convertee",
+        de: "/archiv/convertee",
     },
     project_convertee_page_title: {
         en: "University Course Directory - Portfolio: Sebastian Schuler",
@@ -747,8 +781,8 @@ const LOCALE_DATA = {
     // ============================== PROJECT PORTFOLIO HOMEPAGE ==============================
 
     project_portfolio_internal_link: {
-        en: "/project/portfolio-homepage",
-        de: "/projekt/portfolio-homepage",
+        en: "/archive/portfolio-homepage",
+        de: "/archiv/portfolio-homepage",
     },
     project_portfolio_page_title: {
         en: "Portfolio Homepage - Portfolio: Sebastian Schuler",
@@ -763,9 +797,9 @@ const LOCALE_DATA = {
         de: ``,
     },
 
-    // x_secs_remaining: (sec:number) => ({
-    //     de: `Nur noch ${sec} Sekunden verbleibend`,
-    //     en: `Only ${sec} seconds remaining`
+    // x_min_remaining: (min:number) => ({
+    //     de: `Es sind noch ${sec} Minuten verbleibend`,
+    //     en: `There are ${min} minutes remaining`
     // }) as const,
     // from_x_to_y: (x:number, y:number) => ({
     //     de: `Von ${x} bis ${y}`,

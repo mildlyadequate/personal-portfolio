@@ -17,17 +17,13 @@ module.exports = {
         source: '/archiv', 
         destination: '/archive',
       },
-
-      // Order matters -> first the specific translations for every project page that needs translating
       {
-        source: '/projekt/marketing-akademie', 
-        destination: '/project/marketing-academy',
+        source: '/archiv/marketing-akademie', 
+        destination: '/archive/marketing-academy',
       },
-
-      // Then the general path translation in case the name stays the same
       {
-        source: '/projekt/:path*', 
-        destination: '/project/:path*',
+        source: '/archiv/:path*', 
+        destination: '/archive/:path*',
       },
 
     ]

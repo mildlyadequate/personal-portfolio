@@ -69,10 +69,10 @@ const Archive = () => {
 
                   <td className={`p-4 pr-4 ${isSmallWindow ? "flex flex-col" : "hidden"}`}>
                     <Link href={project.linkInternal} passHref>
-                      <div className='flex flex-row'>
+                      <a title={T.archive_project_link_alt + project.title} className='flex flex-row hover:no-underline'>
                         <span className='font-mono text-themeAccent mr-4 mt-[2px]'>{project.year}</span>
                         <h3 className='text-white text-lg font-sans font-semibold group-hover:text-themeAccent group-hover:underline cursor-pointer'>{project.title}</h3>
-                      </div>
+                      </a>
                     </Link>
                     <div className='flex flex-row'>
                       {project.tags.map((tag, index) => (
@@ -82,7 +82,7 @@ const Archive = () => {
                     <div className={`mt-1 group-hover:text-white self-start`}>
                       <div className='flex gap-4'>
 
-                        {typeof project.linkInternal === 'string' &&  // project.linkInternal !== "" &&
+                        {typeof project.linkInternal === 'string' && 
                           <Link href={project.linkInternal} passHref>
                             <a className='py-2 archive-icon-link'><MdOutlineArticle className='archive-icon' /></a>
                           </Link>
@@ -106,12 +106,14 @@ const Archive = () => {
                     {project.year}
                   </td>
 
-                  <Link href={project.linkInternal} passHref>
-                    <td className={`p-4 ${project.featured && !isSmallWindow ? "flex flex-col" : ""} pr-4 cursor-pointer content-center group ${isSmallWindow ? "hidden" : ""}`}>
-                      {project.featured && <span className='text-sm text-themeAccent'>Featured</span>}
-                      <h3 className='text-white text-lg font-semibold group-hover:text-themeAccent group-hover:underline'>{project.title}</h3>
-                    </td>
-                  </Link>
+                  <td className={`p-4 ${project.featured && !isSmallWindow ? "flex flex-col" : ""} pr-4 cursor-pointer content-center group ${isSmallWindow ? "hidden" : ""}`}>
+                    <Link href={project.linkInternal} passHref>
+                      <a className='hover:no-underline' title={T.archive_project_link_alt + project.title}>
+                        {project.featured && <span className='text-sm text-themeAccent'>{T.work_featured_overline}</span>}
+                        <h3 className='text-white text-lg font-semibold group-hover:text-themeAccent hover:underline'>{project.title}</h3>
+                      </a>
+                    </Link>
+                  </td>
 
                   <td className={`w-4/12 p-4 pr-4 ${isSmallWindow ? "hidden" : ""}`}>
                     {project.tags.map((tag, index) => (
@@ -124,16 +126,22 @@ const Archive = () => {
 
                       {typeof project.linkInternal === 'string' &&  // project.linkInternal !== "" &&
                         <Link href={project.linkInternal} passHref>
-                          <a className='py-2 archive-icon-link'><MdOutlineArticle className='archive-icon' /></a>
+                          <a className='py-2 archive-icon-link' title={T.archive_project_link_alt + project.title}>
+                            <MdOutlineArticle className='archive-icon' />
+                          </a>
                         </Link>
                       }
 
                       {project.linkGithub !== "" &&
-                        <a href={project.linkGithub} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'><FiGithub className='archive-icon' /></a>
+                        <a href={project.linkGithub} title="Github Link" target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'>
+                          <FiGithub className='archive-icon' />
+                        </a>
                       }
 
                       {project.linkExternal !== "" &&
-                        <a href={project.linkGithub} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'><FiExternalLink className='archive-icon' /></a>
+                        <a href={project.linkGithub} title={T.archive_project_external_alt} target={"_blank"} rel="noreferrer" className='py-2 archive-icon-link'>
+                          <FiExternalLink className='archive-icon' />
+                        </a>
                       }
 
                     </div>

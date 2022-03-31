@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 import { MdClose } from 'react-icons/md';
-import { CSSTransition } from 'react-transition-group';
-import { useTranslation } from '../hooks/useTranslation';
+import { useTranslation } from '../../hooks/useTranslation';
 
 const FormSuccessMessage = () => {
 
@@ -49,4 +48,4 @@ const FormSuccessMessage = () => {
     )
 }
 
-export default FormSuccessMessage
+export default FormSuccessMessage;

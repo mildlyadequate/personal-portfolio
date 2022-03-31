@@ -3,6 +3,7 @@ import { useTranslation } from '../../hooks/useTranslation';
 import img from '../../assets/images/me_france.jpg';
 import Image from 'next/image';
 import { Link as LinkScroll } from "react-scroll";
+import SectionHeading from '../IndexComponents/SectionHeading';
 
 const AboutSection = () => {
 
@@ -14,13 +15,7 @@ const AboutSection = () => {
   return (
     <div id="about" className="py-5 my-24 mx-auto max-w-screen-md items-center justify-center flex flex-col">
 
-      <h2
-        className='numbered-section-heading text-white 
-                  before:font-mono before:text-2xl before:text-themeAccent
-                after:bg-gray-500'
-      >
-        {T.about_header}
-      </h2>
+      <SectionHeading text={T.about_header} paddingBottom={true} />
 
       <div className={`block lg:grid lg:grid-cols-about gap-12`}>
 
@@ -58,7 +53,7 @@ const AboutSection = () => {
 
         <div className='relative max-w-[70%] lg:max-w-xs mx-auto my-12 lg:m-0'>
           <div className='block relative w-full dark:bg-themeAccent bg-opacity-90 rounded dark:mix-blend-screen group hover:bg-transparent transition'>
-            <Image src={img} className='rounded dark:mix-blend-multiply dark:opacity-80 opacity-60 group-hover:mix-blend-normal transition' layout='responsive' alt='Picture of me on top of a mountain' />
+            <Image src={img} className='rounded dark:mix-blend-multiply dark:opacity-80 opacity-60 group-hover:mix-blend-normal transition' layout='responsive' alt={T.about_image_alt} />
           </div>
         </div>
 

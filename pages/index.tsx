@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import FormSuccessMessage from '../components/FormSuccessMessage'
+import FormSuccessMessage from '../components/IndexComponents/FormSuccessMessage'
 import AboutSection from '../components/IndexSections/AboutSection'
 import ContactSection from '../components/IndexSections/ContactSection'
 import ExperienceSection from '../components/IndexSections/ExperienceSection'

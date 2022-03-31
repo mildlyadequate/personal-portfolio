@@ -45,9 +45,8 @@ const HeroSection = React.memo(() => {
             </span>
             <p className="text-lg text-themeMild">{T.hero_description}</p>
 
-            <div className="mt-8">
-                <StyledScrollButton to="about" text={T.hero_button_read_more} altText={T.hero_button_read_more_alt} />
-            </div>
+            <StyledScrollButton className="mt-8" to="about" text={T.hero_button_read_more} altText={T.hero_button_read_more_alt} />
+
             <p className="text-themeMild pt-8 ">
                 {T.hero_language_switch_before}
                 <Link href={'/'} locale={getLanguageSelectLink()}>

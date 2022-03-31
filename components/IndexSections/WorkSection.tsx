@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ProjectMeta, useProjectData } from '../../hooks/useProjectData';
 import { getDangerousHtml } from '../../util/helperUtil';
+import SectionHeading from '../IndexComponents/SectionHeading';
 
 // How many other projects are shown by default before user must press show more button
 const OTHER_WORK_DEFAULT_GRID = 6;
@@ -36,13 +37,7 @@ const WorkSection = () => {
     return (
         <div id="work" className="py-5 my-24 mx-auto max-w-screen-lg items-center justify-center flex flex-col">
 
-            <h2
-                className='numbered-section-heading text-white
-            before:font-mono before:text-2xl before:text-themeAccent
-          after:bg-gray-500'
-            >
-                {T.work_header}
-            </h2>
+            <SectionHeading text={T.work_header} paddingBottom={true} />
 
             {featuredProjects.map((item, index) => (
 
@@ -71,15 +66,21 @@ const WorkSection = () => {
                         <div className='flex work-links'>
 
                             {item.linkGithub !== "" &&
-                                <a href={item.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'><FiGithub className='brandIcon' /></a>
+                                <a title="Github Link" href={item.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'>
+                                    <FiGithub className='brandIcon' />
+                                </a>
                             }
 
                             {item.linkExternal !== "" &&
-                                <a href={item.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'><FiExternalLink className='brandIcon' /></a>
+                                <a title={T.archive_project_external_alt} href={item.linkExternal} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'>
+                                    <FiExternalLink className='brandIcon' />
+                                </a>
                             }
 
-                            <Link href={item.linkInternal}>
-                                <a className='p-2 brandIconLink'><MdOutlineArticle className='brandIcon' /></a>
+                            <Link href={item.linkInternal} passHref>
+                                <a title={T.archive_project_link_alt + item.title} className='p-2 brandIconLink'>
+                                    <MdOutlineArticle className='brandIcon' />
+                                </a>
                             </Link>
 
                         </div>
@@ -88,9 +89,9 @@ const WorkSection = () => {
 
                     <div className={"work-image"}>
 
-                        <Link href={item.linkInternal}>
-                            <a className='w-full h-full align-middle relative block rounded-md'>
-                                {item.image && <Image src={item.image} alt="" layout={"responsive"} width={700} height={440} className={"rounded-md mix-blend-multiply"} />}
+                        <Link href={item.linkInternal} passHref>
+                            <a title={T.archive_project_link_alt + item.title} className='w-full h-full align-middle relative block rounded-md'>
+                                {item.image && <Image src={item.image} alt={T.work_featured_image_alt + item.title} layout={"responsive"} width={700} height={440} className={"rounded-md mix-blend-multiply"} />}
                                 <div className="absolute top-0 right-0 bottom-0 left-0 rounded-md w-full h-full overflow-hidden bg-fixed opacity-50 hover:opacity-0 transition duration-300 ease-in-out bg-themeMild"></div>
                             </a>
                         </Link>
@@ -104,7 +105,9 @@ const WorkSection = () => {
             {/* === OTHER PROJECTS === */}
             <h4 className='text-white text-2xl mb-2 mt-28 font-semibold' >{T.work_other_projects_title}</h4>
             <p>{T.work_other_projects_subtext}</p>
-            <Link href={T.work_archive_internal_link}><a>{T.work_other_subtitle}</a></Link>
+            <Link href={T.work_archive_internal_link} passHref>
+                <a title={T.work_other_subtitle}>{T.work_other_subtitle}</a>
+            </Link>
 
             <ul className='other-work-grid p-0 mt-12 relative grid list-none w-full'>
 
@@ -128,22 +131,28 @@ const WorkSection = () => {
                                             <div className='flex items-center -mr-2'>
 
                                                 {workItem.linkGithub !== "" &&
-                                                    <a href={workItem.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'><FiGithub className='brandIcon' /></a>
+                                                    <a href={workItem.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink' title="Github Link">
+                                                        <FiGithub className='brandIcon' />
+                                                    </a>
                                                 }
 
                                                 {workItem.linkExternal !== "" &&
-                                                    <a href={workItem.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink'><FiExternalLink className='brandIcon' /></a>
+                                                    <a href={workItem.linkGithub} target={"_blank"} rel="noreferrer" className='p-2 brandIconLink' title={T.archive_project_external_alt}>
+                                                        <FiExternalLink className='brandIcon' />
+                                                    </a>
                                                 }
 
                                                 <Link href={workItem.linkInternal} passHref>
-                                                    <a className='p-2 brandIconLink'><MdOutlineArticle className='brandIcon' /></a>
+                                                    <a className='p-2 brandIconLink' title={T.archive_project_link_alt + workItem.title}>
+                                                        <MdOutlineArticle className='brandIcon' />
+                                                    </a>
                                                 </Link>
 
                                             </div>
                                         </div>
                                         <h5 className='text-white text-lg font-semibold'>
                                             <Link href={workItem.linkInternal} passHref>
-                                                <a className='hover:text-themeAccent hover:underline transition'>{workItem.title}</a>
+                                                <a title={T.archive_project_link_alt + workItem.title} className='hover:text-themeAccent hover:underline transition'>{workItem.title}</a>
                                             </Link>
                                         </h5>
                                         <p>{workItem.desc}</p>

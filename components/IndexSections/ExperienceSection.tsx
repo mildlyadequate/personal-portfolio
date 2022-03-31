@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from '../../hooks/useTranslation';
 import clsx from 'clsx';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import SectionHeading from '../IndexComponents/SectionHeading';
 
 const ExperienceSection = () => {
 
@@ -58,14 +59,7 @@ const ExperienceSection = () => {
   return (
     <div id="experience" className="py-28 mx-auto max-w-screen-md items-center justify-center flex flex-col">
 
-      <h2
-        className='numbered-section-heading text-white 
-                  before:font-mono before:text-2xl before:text-themeAccent
-                after:bg-gray-500'
-      >
-        {T.experience_header}
-      </h2>
-
+      <SectionHeading text={T.experience_header} paddingBottom={true} />
 
       <div className='flex flex-row w-full'>
 
