@@ -25,10 +25,10 @@ const Footer = () => {
                 </div> */}
 
                 <div className='flex gap-4 self-center font-mono'>
-                    <a title="Sebastian Schuler's Github" target={"_blank"} href='https://github.com/mildlyadequate' className='text-white hover:underline opacity-50 hover:opacity-100'>
+                    <a title="Sebastian Schuler's Github" target={"_blank"} rel="noreferrer" href='https://github.com/mildlyadequate' className='text-white hover:underline opacity-50 hover:opacity-100'>
                         Github
                     </a>
-                    <a title="Sebastian Schuler's LinkedIn" target={"_blank"} href='https://www.linkedin.com/in/sebastian-schuler-8a1b8022b/' className='text-white hover:underline opacity-50 hover:opacity-100'>
+                    <a title="Sebastian Schuler's LinkedIn" target={"_blank"} rel="noreferrer" href='https://www.linkedin.com/in/sebastian-schuler-8a1b8022b/' className='text-white hover:underline opacity-50 hover:opacity-100'>
                         LinkedIn
                     </a>
                 </div>

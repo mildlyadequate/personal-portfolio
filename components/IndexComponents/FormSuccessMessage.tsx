@@ -23,7 +23,7 @@ const FormSuccessMessage = () => {
         }, 2000);
         return () => clearTimeout(timer);
 
-    }, []);
+    }, [router]);
 
     return (
         <div className={`fixed top-16 left-1/2 right-1/2 -mx-40 z-10 ${showMessage ? "opacity-100" : "opacity-0"} transition`}>
