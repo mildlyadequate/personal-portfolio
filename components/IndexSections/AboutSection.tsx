@@ -29,9 +29,9 @@ const AboutSection = () => {
           </p>
           <p className='mb-4'>
             {T.about_paragraph_footer_1}
-            <StyledLinkScroll id='experience' children={T.experience_header} />
+            <StyledLinkScroll id='experience'>{T.experience_header}</StyledLinkScroll>
             {T.about_paragraph_footer_2}
-            <StyledLinkScroll id='work' children={T.work_header} />
+            <StyledLinkScroll id='work'>{T.work_header}</StyledLinkScroll>
             {T.about_paragraph_footer_3}
           </p>
         </div>
