@@ -35,7 +35,7 @@ const WorkSection = () => {
     }, [itemsExpanded, otherProjects.length]);
 
     return (
-        <div id="work" className="py-5 my-24 mx-auto max-w-screen-lg items-center justify-center flex flex-col">
+        <div id="work" className="py-6 md:py-24 mx-auto max-w-screen-lg items-center justify-center flex flex-col">
 
             <SectionHeading text={T.work_header} paddingBottom={true} />
 
@@ -48,7 +48,7 @@ const WorkSection = () => {
                         <p className='text-themeAccent font-normal mb-2'>{T.work_featured_overline}</p>
 
                         <Link href={item.linkInternal}>
-                            <a><h3 className='mb-5 text-white text-2xl font-semibold cursor-pointer hover:text-themeAccent hover:underline'>{item.title}</h3></a>
+                            <a><h3 className='mb-5 text-white text-2xl font-semibold cursor-pointer can-hover:hover:text-themeAccent can-hover:hover:underline'>{item.title}</h3></a>
                         </Link>
 
                         <div className='relative z-10 p-6 bg-themeBackgroundLight text-themeMild shadow rounded'>
@@ -103,8 +103,9 @@ const WorkSection = () => {
             ))}
 
             {/* === OTHER PROJECTS === */}
-            <h4 className='text-white text-2xl mb-2 mt-28 font-semibold' >{T.work_other_projects_title}</h4>
-            <p>{T.work_other_projects_subtext}</p>
+
+            <h4 className='text-white text-2xl mb-2 mt-0 md:mt-8 font-semibold' >{T.work_other_projects_title}</h4>
+            <p className='text-center mb-4'>{T.work_other_projects_subtext}</p>
             <Link href={T.work_archive_internal_link} passHref>
                 <a title={T.work_other_subtitle}>{T.work_other_subtitle}</a>
             </Link>
@@ -122,7 +123,7 @@ const WorkSection = () => {
                             exit={false}
                         >
                             <li style={{ transitionDelay: `${index >= OTHER_WORK_DEFAULT_GRID ? (index - OTHER_WORK_DEFAULT_GRID) * 100 : 0}ms` }} key={index}>
-                                <div className='flex flex-col relative h-full items-start justify-between bg-themeBackgroundLight rounded py-8 px-7 transition group hover:-translate-y-2'>
+                                <div className='flex flex-col relative h-full items-start justify-between bg-themeBackgroundLight rounded py-8 px-7 transition group can-hover:hover:-translate-y-2'>
                                     <header className='block w-full'>
                                         <div className='flex justify-between items-center mb-9'>
                                             <div>
@@ -152,7 +153,7 @@ const WorkSection = () => {
                                         </div>
                                         <h5 className='text-white text-lg font-semibold'>
                                             <Link href={workItem.linkInternal} passHref>
-                                                <a title={T.archive_project_link_alt + workItem.title} className='hover:text-themeAccent hover:underline transition'>{workItem.title}</a>
+                                                <a title={T.archive_project_link_alt + workItem.title} className='can-hover:hover:text-themeAccent can-hover:hover:underline'>{workItem.title}</a>
                                             </Link>
                                         </h5>
                                         <p>{workItem.desc}</p>

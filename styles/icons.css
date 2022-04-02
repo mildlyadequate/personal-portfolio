@@ -8,9 +8,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 }
-.brandIconLink:hover .brandIcon{
-    stroke: #09BC8A;
-    transform: translateY(-3px);
+@media (hover: hover) {
+    .brandIconLink:hover .brandIcon{
+        stroke: #09BC8A;
+        transform: translateY(-3px);
+    }
 }
 
 /* ARCHIVE */
@@ -24,10 +26,13 @@
     transition-duration: 150ms;
 }
 
-.archive-icon-link:hover .archive-icon{
-    stroke: #09BC8A;
-    transform: translateY(-3px);
+@media (hover: hover) {
+    .archive-icon-link:hover .archive-icon{
+        stroke: #09BC8A;
+        transform: translateY(-3px);
+    }
 }
+
 
 /* IMAGE ZOOM */
 .image-zoom-close{
@@ -40,8 +45,10 @@
     transition-duration: 150ms;
 }
 
-.image-zoom-close-link:hover .image-zoom-close{
-    stroke: #09BC8A;
+@media (hover: hover) {
+    .image-zoom-close-link:hover .image-zoom-close{
+        stroke: #09BC8A;
+    }
 }
 
 /* CLOSE FORM NOTIF ICON */

@@ -56,21 +56,21 @@ const MobileNav = ({
                     <ul className="p-0 m-0 w-full">
 
                         {navigationLinks.map((navLink, index) => (
-                            <li className="py-2" key={index}>
+                            <li className="py-4" key={index}>
                                 <LinkScroll
                                     onClick={toggleSidebar}
                                     smooth={true}
                                     duration={500}
                                     offset={-50}
-                                    className={"cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-themeAccent"}
+                                    className={"cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 can-hover:hover:text-themeAccent"}
                                     to={navLink}
                                 >
-                                    <span className="pr-2 text-themeAccent">0{index + 1}.</span><span className="hover:underline">{navDataList[index]}</span>
+                                    <span className="pr-2 text-themeAccent">0{index + 1}.</span><span className="can-hover:hover:underline">{navDataList[index]}</span>
                                 </LinkScroll>
                             </li>
                         ))}
 
-                        <li className="py-2">
+                        <li className="py-4">
                             <StyledScrollButton onClick={toggleSidebar} to={"contact"} altText={T.nav_contact_button_alt} text={T.nav_contact_button} />
                         </li>
                     </ul>

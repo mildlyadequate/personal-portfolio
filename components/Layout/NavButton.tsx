@@ -20,10 +20,10 @@ const NavButton = ({ index, text, href, isRouteForced }: Props) => {
         <>
             {
                 isRoute ? (
-                    <Link href={"/#"+href}>
-                        <a className={"cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-themeAccent"}>
+                    <Link href={"/#"+href} passHref>
+                        <a className={"cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 can-hover:hover:text-themeAccent"}>
                             {typeof index === "number" && (<span className="pr-2 text-themeAccent">0{index + 1}.</span> ) }
-                            <span className="hover:underline">{text}</span>
+                            <span className="can-hover:hover:underline">{text}</span>
                         </a>
                     </Link>
                 ) : (
@@ -32,12 +32,12 @@ const NavButton = ({ index, text, href, isRouteForced }: Props) => {
                         duration={500}
                         offset={-50}
                         className={
-                            "cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-themeAccent"
+                            "cursor-pointer font-medium tracking-wide text-gray-100 transition-colors duration-200 can-hover:hover:text-themeAccent"
                         }
                         to={href}
                     >
                         {typeof index === "number" && (<span className="pr-2 text-themeAccent">0{index + 1}.</span>) }
-                        <span className="hover:underline">{text}</span>
+                        <span className="can-hover:hover:underline">{text}</span>
                     </LinkScroll>
                 )
             }

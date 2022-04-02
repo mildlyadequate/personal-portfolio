@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'can-hover': {'raw': '(hover: hover)'},
+      },
       fontSize: {
         clampTitle: "clamp(2.125rem, 7vw, 5rem)",
         clampSubtitle: "clamp(1.25rem, 3vw, 2.25rem)",

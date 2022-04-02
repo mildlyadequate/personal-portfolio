@@ -210,7 +210,7 @@ const LOCALE_DATA = {
     },
     experience_item4_desc: {
         en: `<ul> 
-                <li>The goal of the <a target="_blank" href="https://www.hs-kl.de/en/informatik-und-mikrosystemtechnik/studiengaenge/digital-media-marketing">course</a> 
+                <li>The objective of the <a target="_blank" href="https://www.hs-kl.de/en/informatik-und-mikrosystemtechnik/studiengaenge/digital-media-marketing">course</a> 
                 is the career-oriented education of computer scientists with basic skills in marketing and digital content creation.</li> 
                 <li>Acquired Skills include, but are not limited to, web development, Java desktop programming, SEO, CMS, online marketing, UX design, databases, 
                 and app development.</li> 
@@ -376,7 +376,7 @@ const LOCALE_DATA = {
     // ========== CONTACT ==========
     contact_header: {
         en: `Contact Me`,
-        de: `Schreib mir eine Nachricht`,
+        de: `Kontakt`,
     },
 
     // ============================== ARCHIVE PAGE ==============================
@@ -812,8 +812,8 @@ const LOCALE_DATA = {
         de: `Copsi - Portfolio: Sebastian Schuler`,
     },
     project_copsi_title: {
-        en: `Copsi - Organisation and communication`,
-        de: `Copsi - Organisation und Kommunikation`,
+        en: `Copsi - Collaboration Application`,
+        de: `Copsi - Collaboration Application`,
     },
     project_copsi_desc: {
         en: `Copsi is a desktop application that is used for communication and the exchange of documents between professors, assistants, and students of the
@@ -879,7 +879,7 @@ const LOCALE_DATA = {
             <li><a target="_blank" href="/files/docs-copsi.pdf">Dokumentation [PDF]</a></li>
         </ul>`,
     },
-    
+
     // x_min_remaining: (min:number) => ({
     //     de: `Es sind noch ${sec} Minuten verbleibend`,
     //     en: `There are ${min} minutes remaining`

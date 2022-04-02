@@ -57,28 +57,28 @@ const ExperienceSection = () => {
   };
 
   return (
-    <div id="experience" className="py-28 mx-auto max-w-screen-md items-center justify-center flex flex-col">
+    <div id="experience" className="py-6 md:py-24 mx-auto max-w-screen-md items-center justify-center flex flex-col">
 
       <SectionHeading text={T.experience_header} paddingBottom={true} />
 
-      <div className='flex flex-row w-full'>
+      <div className='flex flex-col md:flex-row w-full'>
 
-        <div className='relative block w-max p-0 m-0 list-none basis-1/4'>
+        <div className='relative block w-max p-0 mb-12 md:m-0 list-none basis-full md:basis-1/4'>
 
           <div className={"relative flex flex-col w-max p-0 m-0 list-none"}>
 
             <div
-              className={clsx("absolute w-full transition-transform transform border-l-2 border-themeAccent -left-[2px] z-10")}
+              className={"absolute w-full transition-transform transform border-l-2 border-themeAccent -left-[2px] z-10"}
               style={{ transform: `translateY(${getTranslate()})`, height: `${100 / experiences.length}%` }}
             />
 
             <div
-              className={clsx("absolute w-full h-full transition-transform transform border-l border-themeMild -left-[2px]")}
+              className={"absolute w-full h-full transition-transform transform border-l border-themeMild -left-[2px]"}
             />
 
             {experiences.map((experience, index) => (
               <button key={index}
-                className={`relative flex w-full py-2 px-5 whitespace-nowrap hover:bg-themeBackgroundLight 
+                className={`relative flex w-full py-2 px-5 whitespace-nowrap can-hover:hover:bg-themeBackgroundLight 
                             ${selectedTab === index ? "font-semibold text-themeAccent" : "text-themeMild"}`
                 }
                 onClick={() => setSelectedTab(index)}
@@ -91,7 +91,7 @@ const ExperienceSection = () => {
         </div>
 
 
-        <div className='relative block w-full ml-5'>
+        <div className='relative block w-full md:ml-5'>
 
           <div className='w-full h-auto px-1 block'>
 
@@ -100,7 +100,7 @@ const ExperienceSection = () => {
               <CSSTransition nodeRef={nodeRef} key={selectedTab} timeout={200} classNames={"experience-transition"}>
 
                 <div ref={nodeRef} className='flex flex-col'>
-                  <a href={experiences[selectedTab].institutionLink} target={"_blank"} rel="noreferrer" className='text-themeAccent font-mono text-sm mb-1'>
+                  <a href={experiences[selectedTab].institutionLink} target={"_blank"} rel="noreferrer" className='font-mono text-sm mb-1'>
                     {experiences[selectedTab].institution}
                   </a>
                   <h3 className='text-xl text-white leading-none mb-1'>{experiences[selectedTab].header}</h3>

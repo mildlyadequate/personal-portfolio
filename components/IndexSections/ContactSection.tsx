@@ -12,7 +12,7 @@ const ContactSection = () => {
     return (
         <div
             id="contact"
-            className="py-24 mx-auto max-w-screen-sm flex flex-col"
+            className="py-6 md:py-24 mx-auto max-w-screen-sm flex flex-col"
         >
 
             <SectionHeading text={T.contact_header} paddingBottom={true} />
@@ -23,7 +23,7 @@ const ContactSection = () => {
                     name="contactme"
                     action="?formsuccess=true"
                     method="POST"
-                    className={"block w-full md:w-3/4 mr-8"}
+                    className={"block w-full md:w-3/4 md:mr-8"}
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                 >
@@ -70,7 +70,7 @@ const ContactSection = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-1/2 py-4 mx-auto border-themeAccent border rounded mt-8 text-white hover:text-themeBackground hover:bg-themeAccent transition"
+                        className="w-1/2 py-4 mx-auto border-themeAccent border rounded mt-8 text-white can-hover:hover:text-themeBackground can-hover:hover:bg-themeAccent transition"
                     >
                         Send
                     </button>

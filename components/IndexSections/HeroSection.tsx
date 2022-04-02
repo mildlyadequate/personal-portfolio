@@ -28,7 +28,7 @@ const HeroSection = React.memo(() => {
 
     return (
 
-        <div style={{ height: "calc(100vh - 71px)" }} className="py-5 mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-screen-lg items-start justify-center flex flex-col">
+        <div className="py-5 h-screen mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-screen-lg items-start justify-center flex flex-col">
             <p className="font-mono text-themeAccent font-normal text-xl mb-5">{T.hero_top_line}</p>
             <h1 className="text-white leading-none text-clampTitle mb-3 font-bold ml-[-2px]">Sebastian Schuler</h1>
             <span className="text-white leading-none text-clampSubtitle mb-3 font-bold">
@@ -50,7 +50,7 @@ const HeroSection = React.memo(() => {
             <p className="text-themeMild pt-8 ">
                 {T.hero_language_switch_before}
                 <Link href={'/'} locale={getLanguageSelectLink()}>
-                    <a title={T.hero_language_switch_alt} className="text-white hover:text-themeAccent hover:underline">
+                    <a title={T.hero_language_switch_alt}>
                         {getLanguageSelectText()}
                     </a>
                 </Link>

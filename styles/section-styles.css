@@ -47,16 +47,6 @@
   margin-top: 10px;
 }
 
-.dynamic-content-div ul li a,
-.dynamic-content-div p a {
-  color: white;
-}
-.dynamic-content-div ul li a:hover,
-.dynamic-content-div p a:hover {
-  color: #09bc8a;
-  text-decoration: underline;
-}
-
 .dynamic-content-div ul li::before {
   content: "▹";
   position: absolute;

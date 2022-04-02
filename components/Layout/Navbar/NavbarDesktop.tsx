@@ -57,9 +57,9 @@ const DesktopNav = ({
                                 width="28"
                                 height="28"
                                 viewBox="0 0 560 560">
-                                <path className="group-hover:opacity-0 transition" fillRule="evenodd" d="M63 0h434a63 63 0 1 1 0 126H63A63 63 0 1 1 63 0Zm371 388c0-25-21-45-46-45H63a63 63 0 0 1 0-126h389c59 0 108 48 108 108v127c0 60-48 108-108 108H63a63 63 0 0 1 0-126h325c25 0 45-21 45-46z" clipRule="evenodd" />
-                                <path className="fill-themeAccent opacity-0 group-hover:opacity-100 transition" d="M75 18 497 0a63 63 0 0 1 0 126H63c-35 0-51-7-51-41 0-35 15-57 50-57zm359 370c0-24-21-45-46-45L68 318c-35 0-50-16-50-51s10-50 45-50h389c59 0 108 48 108 108v127c0 60-48 108-108 108H63a63 63 0 0 1 0-126h325c25 0 45-21 45-46z" />
-                                <path className="fill-themeAccent opacity-0 group-hover:opacity-100 transition" d="M127 172c0 24 20 45 45 45l298 17c34 0 58 29 58 63 0 35 4 46-31 46H108C49 343 0 295 0 235V108C0 49 49 0 108 0h389a63 63 0 0 1 0 126H172c-25 1-46 21-46 46z" />
+                                <path className="can-hover:group-hover:opacity-0 transition" fillRule="evenodd" d="M63 0h434a63 63 0 1 1 0 126H63A63 63 0 1 1 63 0Zm371 388c0-25-21-45-46-45H63a63 63 0 0 1 0-126h389c59 0 108 48 108 108v127c0 60-48 108-108 108H63a63 63 0 0 1 0-126h325c25 0 45-21 45-46z" clipRule="evenodd" />
+                                <path className="fill-themeAccent opacity-0 can-hover:group-hover:opacity-100 transition" d="M75 18 497 0a63 63 0 0 1 0 126H63c-35 0-51-7-51-41 0-35 15-57 50-57zm359 370c0-24-21-45-46-45L68 318c-35 0-50-16-50-51s10-50 45-50h389c59 0 108 48 108 108v127c0 60-48 108-108 108H63a63 63 0 0 1 0-126h325c25 0 45-21 45-46z" />
+                                <path className="fill-themeAccent opacity-0 can-hover:group-hover:opacity-100 transition" d="M127 172c0 24 20 45 45 45l298 17c34 0 58 29 58 63 0 35 4 46-31 46H108C49 343 0 295 0 235V108C0 49 49 0 108 0h389a63 63 0 0 1 0 126H172c-25 1-46 21-46 46z" />
                             </svg>
                         </a>
                     </Link>

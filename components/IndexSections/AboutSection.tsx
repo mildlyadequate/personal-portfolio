@@ -4,6 +4,7 @@ import img from '../../assets/images/me_france.jpg';
 import Image from 'next/image';
 import { Link as LinkScroll } from "react-scroll";
 import SectionHeading from '../IndexComponents/SectionHeading';
+import StyledLinkScroll from '../IndexComponents/StyledLinkScroll';
 
 const AboutSection = () => {
 
@@ -13,7 +14,7 @@ const AboutSection = () => {
   const tools = ["Google Analytics", "Google Ads", "Adobe Photoshop", "Adobe XD", "Git", "WordPress"];
 
   return (
-    <div id="about" className="py-5 my-24 mx-auto max-w-screen-md items-center justify-center flex flex-col">
+    <div id="about" className="py-6 lg:my-24 mx-auto max-w-screen-md items-center justify-center flex flex-col">
 
       <SectionHeading text={T.about_header} paddingBottom={true} />
 
@@ -28,32 +29,16 @@ const AboutSection = () => {
           </p>
           <p className='mb-4'>
             {T.about_paragraph_footer_1}
-            <LinkScroll
-              to={"experience"}
-              smooth={true}
-              duration={500}
-              offset={-50}
-              className={"dark:text-white text-themeBackgroundLight cursor-pointer hover:underline"}
-            >
-              {T.experience_header}
-            </LinkScroll>
+            <StyledLinkScroll id='experience' children={T.experience_header} />
             {T.about_paragraph_footer_2}
-            <LinkScroll
-              to={"work"}
-              smooth={true}
-              duration={500}
-              offset={-50}
-              className={"dark:text-white text-themeBackgroundLight cursor-pointer hover:underline"}
-            >
-              {T.work_header}
-            </LinkScroll>
+            <StyledLinkScroll id='work' children={T.work_header} />
             {T.about_paragraph_footer_3}
           </p>
         </div>
 
         <div className='relative max-w-[70%] lg:max-w-xs mx-auto my-12 lg:m-0'>
-          <div className='block relative w-full dark:bg-themeAccent bg-opacity-90 rounded dark:mix-blend-screen group hover:bg-transparent transition'>
-            <Image src={img} className='rounded dark:mix-blend-multiply dark:opacity-80 opacity-60 group-hover:mix-blend-normal transition' layout='responsive' alt={T.about_image_alt} />
+          <div className='block relative w-full can-hover:bg-themeAccent bg-opacity-90 rounded mix-blend-screen group can-hover:hover:bg-transparent transition'>
+            <Image src={img} className='rounded mix-blend-multiply opacity-80 can-hover:group-hover:mix-blend-normal transition' layout='responsive' alt={T.about_image_alt} />
           </div>
         </div>
 

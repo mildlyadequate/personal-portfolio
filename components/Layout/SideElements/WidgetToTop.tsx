@@ -4,12 +4,12 @@ import { useTranslation } from '../../../hooks/useTranslation';
 
 const WidgetToTop = () => {
 
-    const [scrollPosition, setScrollPosition] = useState(0);
+    const [displayWidget, setDisplayWidget] = useState(false);
     let T = useTranslation();
 
     const handleScroll = () => {
         const position = window.pageYOffset;
-        setScrollPosition(position);
+        setDisplayWidget( position > 80 );
     };
 
     useEffect(() => {
@@ -30,9 +30,9 @@ const WidgetToTop = () => {
         <>
             <button
                 onClick={() => scrollToTop()}
-                className={`${scrollPosition > 80 ? 'opacity-100' : 'opacity-0'} flex px-4 py-2 bg-themeBackgroundLight rounded-full shadow
+                className={`${displayWidget ? 'opacity-100' : 'opacity-0'} flex px-4 py-2 bg-themeBackgroundLight rounded-full shadow
                 fixed bottom-8 left-auto right-5 z-10 toTopIcon-link cursor-pointer transition group
-                hover:bg-themeAccent text-white hover:text-themeBackground`}
+                can-hover:hover:bg-themeAccent text-white can-hover:hover:text-themeBackground`}
             >
                 {T.button_to_top_text}
             </button>

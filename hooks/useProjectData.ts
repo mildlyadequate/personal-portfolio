@@ -69,7 +69,7 @@ export function useProjectData(sortByYear = false) {
             desc: T.project_copsi_desc,
             tags: ["Electron", "Express", "MongoDB","SocketIO"],
             linkExternal: "",
-            linkGithub: "",
+            linkGithub: "https://github.com/mildlyadequate/copsi",
             linkInternal: T.project_copsi_internal_link,
             image: "",
         },

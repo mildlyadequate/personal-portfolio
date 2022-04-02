@@ -22,9 +22,8 @@ const StyledScrollButton = ({ className, to, altText, text, onClick }: TStyledSc
                 className={ clsx(`h-12 px-6 inline-flex items-center justify-center
                 font-medium tracking-wide text-white
                 border border-themeAccent rounded
-                hover:bg-themeAccent hover:text-themeBackground hover:no-underline
-                cursor-pointer shadow
-                transition duration-200`, className) }
+                can-hover:hover:bg-themeAccent can-hover:hover:text-themeBackground can-hover:hover:no-underline
+                cursor-pointer shadow transition duration-200`, className) }
                 aria-label={altText}
                 title={altText}
             >
